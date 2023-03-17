@@ -1,0 +1,48 @@
+.intro {
+  margin-top: -15px;
+  position: relative;
+  padding: 185px 70px 280px;
+  background: linear-gradient(
+      180deg,
+      rgba(25, 32, 36, 0.7) 71.72%,
+      rgba(25, 32, 36, 0) 100%
+    ),
+    url("../../img/background.jpg") no-repeat center;
+  background-size: cover;
+  @include vp-374() {
+    padding: 80px 0 190px;
+  }
+
+  @include vp-767() {
+    padding: 80px 0 205px;
+  }
+}
+.intro__container {
+}
+.intro__header {
+  margin-bottom: 40px;
+
+  @include vp-767() {
+    margin-bottom: 20px;
+  }
+}
+.intro__text {
+  &.text {
+    margin-bottom: 40px;
+    @include vp-767() {
+      margin-bottom: 50px;
+    }
+    @include vp-374() {
+      margin-bottom: 50px;
+    }
+  }
+}
+.intro__button {
+  @include vp-374() {
+    margin-left: 0;
+  }
+
+  @include vp-767() {
+    margin-left: 45px;
+  }
+}

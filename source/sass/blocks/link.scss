@@ -1,0 +1,78 @@
+.link {
+  font-family: $ff-placeholder;
+  font-size: $fz-default;
+  line-height: 21px;
+  color: $color-default-black;
+
+  &--menu-link {
+    color: $color-deep-sky-blue;
+    overflow: hidden;
+    background: linear-gradient(
+      to left,
+      $color-default-white,
+      $color-default-white 50%,
+      $color-deep-sky-blue 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 500ms ease;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      background-position: 0 100%;
+      outline: none;
+    }
+
+    &:active {
+      background-position: 0 100%;
+    }
+  }
+
+  &--footer-white {
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-semi-transperent;
+    overflow: hidden;
+    background: linear-gradient(
+      to right,
+      $color-default-white,
+      $color-default-white 50%,
+      $color-semi-transperent 50%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 500ms ease;
+    text-decoration: none;
+
+    @include vp-374() {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include hover {
+      color: $color-default-white;
+      background-position: 0 100%;
+    }
+
+    @include focus {
+      color: $color-default-white;
+      outline: 2px solid $color-default-white;
+    }
+
+    &:active {
+      color: $color-default-white;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}

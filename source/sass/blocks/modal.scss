@@ -16,8 +16,7 @@
   visibility: hidden;
   opacity: 0;
 
-  transition: opacity $trans-modal,
-    transform $trans-modal,
+  transition: opacity $trans-modal, transform $trans-modal,
     visibility $trans-modal;
 
   pointer-events: none;
@@ -62,7 +61,7 @@
     width: 600px;
     padding: 40px;
 
-    background-color: $color-default-white;
+    background-color: $color-deep-sky-blue;
 
     @include vp-767 {
       width: 100%;
@@ -83,6 +82,19 @@
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      background-color: rgba(4, 20, 39, 0.25);
+    }
+
+    &:focus {
+      background-color: rgba(4, 20, 39, 0.25);
+      outline: 1px solid $color-semi-transperent;
+    }
+
+    &:active {
+      background-color: rgba(4, 20, 39, 0.3);
+    }
   }
 
   &--responsive {
@@ -116,4 +128,77 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__header {
+  margin-bottom: 15px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+.modal__form-label {
+  color: $color-basic-white;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 25px;
+  }
+}
+.modal__form-input {
+  width: 100%;
+  padding: 15px;
+  color: $color-basic-white;
+  background-color: $background-form-transparent;
+  border: none;
+
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background-color: rgba(4, 20, 39, 0.25);
+  }
+
+  &:focus {
+    background-color: rgba(4, 20, 39, 0.25);
+    outline: 1px solid $color-semi-transperent;
+  }
+
+  &:active {
+    background-color: rgba(4, 20, 39, 0.3);
+  }
+}
+
+.modal__description {
+  margin-bottom: 40px;
+  color: $color-basic-white;
+}
+
+.modal__form-text-area {
+  min-height: 155px;
+  height: 100%;
+  width: 100%;
+  padding: 25px 15px;
+  border: none;
+  color: $color-basic-white;
+  background-color: $background-form-transparent;
+  transition: background-color 300ms ease;
+
+  &:hover {
+    background-color: rgba(4, 20, 39, 0.25);
+  }
+
+  &:focus {
+    background-color: rgba(4, 20, 39, 0.25);
+    outline: 1px solid $color-semi-transperent;
+  }
+
+  &:active {
+    background-color: rgba(4, 20, 39, 0.3);
+  }
+}
+.modal__form-button {
+  margin-bottom: 20px;
+}
+.modal__form-checkbox {
 }

@@ -1,11 +1,21 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from "./utils/ios-vh-fix";
+import { initModals } from "./modules/modals/init-modals";
+import { Form } from "./modules/form-validate/form";
+import {
+  onAboutButtonClick,
+  moreAboutButton,
+  callButton,
+  closeButton,
+  onModalButtonClick,
+  onFooterAddressClick,
+  linksButton,
+  onFooterLinksClick,
+  addressButton
+} from "./modules/open-element";
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
 
@@ -13,10 +23,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+  callButton.addEventListener("click", onModalButtonClick);
+  closeButton.addEventListener("click", onModalButtonClick);
+  moreAboutButton.addEventListener("click", onAboutButtonClick);
+  linksButton.addEventListener("click", onFooterLinksClick);
+  addressButton.addEventListener("click", onFooterAddressClick);
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     initModals();
     const form = new Form();
     window.form = form;

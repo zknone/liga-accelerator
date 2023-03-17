@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  max-width: $vp-1024;
+  margin: 0 auto;
+  padding-left: $gap-l;
+  padding-right: $gap-l;
+
+  @include vp-1439 {
+    padding-left: $gap-md;
+    padding-right: $gap-md;
+  }
+
+  @include vp-1023 {
+    padding-left: $gap-md;
+    padding-right: $gap-md;
+  }
+
+  @include vp-767 {
+    padding-left: $gap-sm;
+    padding-right: $gap-sm;
+  }
+}

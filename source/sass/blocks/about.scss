@@ -1,0 +1,56 @@
+.about {
+  background-color: $background-alice-blue;
+}
+.about__container {
+  position: relative;
+}
+.about__year {
+  position: absolute;
+  top: 50px;
+  left: -60px;
+  margin: 0;
+  padding: 0;
+  transform: rotate(-90deg);
+
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 156px;
+  line-height: 220px;
+  background-image: url("../../img/background-year.jpg");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $color-default-white;
+
+  @include vp-374() {
+    display: none;
+  }
+}
+.about__wrapper {
+  padding: 0 0 120px 200px;
+
+  @include vp-374() {
+    padding: 0 0 80px;
+  }
+}
+.about__header {
+  padding-bottom: 15px;
+}
+.about__text {
+  padding-bottom: 30px;
+
+  :last-child {
+    padding-bottom: 45px;
+  }
+
+  @include vp-767() {
+    padding-bottom: 20px;
+  }
+
+  &.is-active {
+    display: none;
+  }
+}
+.about__button {
+  width: fit-content;
+  min-width: 180px;
+}

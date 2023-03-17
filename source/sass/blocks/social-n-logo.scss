@@ -1,0 +1,72 @@
+.social-n-logo {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+
+  padding: 55px 30px 50px $gap-l;
+
+  @include vp-767() {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 55px $gap-md;
+  }
+
+  @include vp-374() {
+    flex-direction: column;
+    padding: 55px $gap-sm;
+    border-bottom: 1px solid $color-semi-transperent;
+  }
+}
+
+.social-n-logo__logo {
+  margin-bottom: 30px;
+  @include vp-767() {
+    margin-bottom: 0;
+  }
+  @include vp-374() {
+    margin-bottom: 15px;
+  }
+}
+
+.social-n-logo__wrapper {
+}
+
+.social-n-logo__social-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  column-gap: 15px;
+}
+
+.social-n-logo__social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  & .social-n-logo__social-icon {
+    color: $color-default-white;
+    transition: color 500ms ease;
+
+    @include hover {
+      color: $color-deep-sky-blue;
+      background-position: 0 100%;
+    }
+
+    @include focus {
+      color: $color-deep-sky-blue;
+      outline: 2px solid $color-default-white;
+    }
+
+    &:active {
+      color: $color-deep-sky-blue;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+    }
+  }
+}
