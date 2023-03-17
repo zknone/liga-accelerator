@@ -1,9 +1,11 @@
 .about {
   background-color: $background-alice-blue;
 }
+
 .about__container {
   position: relative;
 }
+
 .about__year {
   position: absolute;
   top: 50px;
@@ -25,6 +27,7 @@
     display: none;
   }
 }
+
 .about__wrapper {
   padding: 0 0 120px 200px;
 
@@ -32,9 +35,11 @@
     padding: 0 0 80px;
   }
 }
+
 .about__header {
   padding-bottom: 15px;
 }
+
 .about__text {
   padding-bottom: 30px;
 
@@ -50,6 +55,7 @@
     display: none;
   }
 }
+
 .about__button {
   width: fit-content;
   min-width: 180px;

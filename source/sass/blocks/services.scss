@@ -5,10 +5,12 @@
 .services__container {
   padding-top: 70px;
   padding-bottom: 140px;
+
   @include vp-767() {
     padding-top: 60px;
     padding-bottom: 75px;
   }
+
   @include vp-374() {
     padding-top: 50px;
     padding-bottom: 80px;
@@ -30,24 +32,29 @@
   row-gap: 30px;
   list-style-type: none;
   display: flex;
+
   @include vp-767() {
     flex-direction: column;
   }
 }
+
 .services__item {
   position: relative;
   padding: 50px 40px;
   width: 28%;
   min-height: 650px;
+
   @include vp-767() {
     padding: 40px 45px;
     width: 100%;
     min-height: 250px;
   }
+
   @include vp-374() {
     width: 100%;
     padding: 30px;
   }
+
   background: url("../../img/services-background.jpg") no-repeat;
   background-size: 1500px 817px;
 
@@ -63,6 +70,7 @@
   &--second {
     background-position-x: -560px;
     background-position-y: -163px;
+
     @include vp-767() {
       background-position-y: -310px;
     }
@@ -71,14 +79,14 @@
   &--third {
     background-position-x: -930px;
     background-position-y: -163px;
+
     @include vp-767() {
       background-position-x: -160px;
       background-position-y: -400px;
     }
   }
 }
-.services__item-header {
-}
+
 .services__item-link {
   position: absolute;
   top: calc(100% - 60px);
@@ -87,7 +95,8 @@
   height: 60px;
   padding: 30px;
   color: $color-default-white;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
   overflow: hidden;
   background: linear-gradient(
     to right,

@@ -1,9 +1,10 @@
-@use "../mixins.scss" as *;
+@import "../mixins.scss";
 
 .navigation {
   position: fixed;
   z-index: 2;
   width: 100%;
+
   @include vp-767() {
     position: initial;
   }
@@ -36,10 +37,11 @@
 }
 
 .navigation__item:has(.navigation__link) {
+  min-width: 230px;
+
   @include vp-1023() {
     min-width: fit-content;
   }
-  min-width: 230px;
 }
 
 .navigation__logo {
@@ -50,6 +52,7 @@
   @include vp-1023() {
     font-size: 0;
   }
+
   @include vp-1919() {
     font-size: 16px;
   }

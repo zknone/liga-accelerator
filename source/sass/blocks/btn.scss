@@ -33,7 +33,6 @@
     background-color: $color-default-white;
     color: $color-deep-sky-blue;
     border: $color-deep-sky-blue 1px solid;
-
   }
 
   &--intro {
@@ -47,8 +46,6 @@
     font-size: 18px;
     line-height: 21px;
   }
-
-
 
   &:disabled {
     opacity: 0.5;

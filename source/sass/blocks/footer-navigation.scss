@@ -33,6 +33,7 @@
 
   &.is-deactivate {
     display: block;
+
     @include vp-374() {
       display: none;
     }
@@ -49,6 +50,7 @@
 
 .footer-navigation__accordeon-button {
   display: none;
+
   @include vp-374() {
     margin: 0;
     padding: 0;
@@ -63,6 +65,7 @@
     border: none;
   }
 }
+
 .footer-navigation__button-sign {
   display: block;
   width: 15px;

@@ -21,6 +21,7 @@
 
   &.is-deactivate {
     display: block;
+
     @include vp-374() {
       display: none;
     }
@@ -37,6 +38,7 @@
 
 .footer-address__accordeon-button {
   display: none;
+
   @include vp-374() {
     top: -15px;
     left: calc(100% - 29px);
@@ -49,6 +51,7 @@
     border: none;
   }
 }
+
 .footer-address__button-sign {
   display: block;
   width: 15px;
