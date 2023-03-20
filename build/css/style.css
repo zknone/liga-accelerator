@@ -1456,12 +1456,12 @@ button,
 }
 
 .footer__logo-wrapper {
-  width: 33.333%;
+  width: 33.33%;
   padding-top: 50px;
 }
 
 .footer__sub-container {
-  width: 66.666%;
+  width: 66.67%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1702,7 +1702,7 @@ button,
   display: block;
   width: 15px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .footer-navigation__button-sign::before {
@@ -1713,7 +1713,7 @@ button,
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   -o-transition: transform 500ms ease;
@@ -1764,7 +1764,7 @@ button,
   display: block;
   width: 15px;
   height: 1px;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
 }
 
 .footer-address__button-sign::before {
@@ -1775,7 +1775,7 @@ button,
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   -webkit-transition: -webkit-transform 500ms ease;
   transition: -webkit-transform 500ms ease;
   -o-transition: transform 500ms ease;
@@ -1900,10 +1900,6 @@ button,
   color: rgb(242, 245, 246);
 }
 
-.advantages__item-icon {
-  color: #00b2ff;
-}
-
 .advantages__item-header {
   padding-bottom: 15px;
 }
@@ -1912,6 +1908,7 @@ button,
   width: 35px;
   height: 60px;
   padding-bottom: 20px;
+  color: #00b2ff;
 }
 
 .about {
@@ -2027,7 +2024,8 @@ button,
   height: 60px;
   padding: 30px;
   color: rgb(242, 245, 246);
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 0;
+  border-bottom-left-radius: 3px;
   overflow: hidden;
   background: -webkit-gradient(linear, left top, right top, from(#0179ad), color-stop(50%, #0179ad), color-stop(50%, #00b2ff));
   background: -o-linear-gradient(left, #0179ad, #0179ad 50%, #00b2ff 50%);
@@ -2070,9 +2068,6 @@ button,
   background: url("../../img/paper-plane.png") no-repeat, url("../../img/form-background-desktop.jpg") no-repeat;
   background-size: 510px 285px, cover;
   background-position: calc(40% - 300px) 40%, center;
-}
-
-.form__container {
   position: relative;
   z-index: 1;
 }
