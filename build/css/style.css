@@ -1536,9 +1536,9 @@ button,
   margin-top: -15px;
   position: relative;
   padding: 185px 70px 280px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/background.jpg") no-repeat center;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background.jpg") no-repeat center;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/background.jpg") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center;
   background-size: cover;
 }
 
@@ -1932,7 +1932,7 @@ button,
   font-weight: 700;
   font-size: 156px;
   line-height: 220px;
-  background-image: url("../../img/background-year.jpg");
+  background-image: url("../img/background-year.webp");
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1997,7 +1997,7 @@ button,
   padding: 50px 40px;
   width: 28%;
   min-height: 650px;
-  background: url("../../img/services-background.jpg") no-repeat;
+  background: url("../img/services-background.webp") no-repeat;
   background-size: 1500px 817px;
 }
 
@@ -2065,7 +2065,7 @@ button,
 
 .form {
   position: relative;
-  background: url("../../img/paper-plane.png") no-repeat, url("../../img/form-background-desktop.jpg") no-repeat;
+  background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat;
   background-size: 510px 285px, cover;
   background-position: calc(40% - 300px) 40%, center;
   position: relative;

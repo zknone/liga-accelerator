@@ -7,7 +7,7 @@
       rgba(25, 32, 36, 0.7) 71.72%,
       rgba(25, 32, 36, 0) 100%
     ),
-    url("../../img/background.jpg") no-repeat center;
+    url("../img/background.webp") no-repeat center;
   background-size: cover;
 
   @include vp-374() {
