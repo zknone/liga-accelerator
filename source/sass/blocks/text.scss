@@ -1,15 +1,8 @@
 .text {
-  // margin: 0;
-  // padding: 0;
-  // font-family: $ff-placeholder;
-  // font-size: $fz-default;
-  // line-height: 21px;
-  // color: $color-default-black;
-
-  // @include vp-374() {
-  //   font-size: 14px;
-  //   line-height: 19px;
-  // }
+  @include vp-374() {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
   &--intro-white {
     font-size: 22px;
@@ -45,9 +38,9 @@
   }
 
   &--advantages {
-    font-size: 16px;
-    line-height: 22px;
-    color: $color-default-black;
+    // font-size: 16px;
+    // line-height: 22px;
+    // color: $color-default-black;
   }
 
   &--form {
