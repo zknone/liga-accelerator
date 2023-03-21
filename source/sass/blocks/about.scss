@@ -36,10 +36,11 @@
   transform: rotate(-90deg);
 
   font-family: $ff-roboto;
+  font-style: bold;
   font-weight: 700;
   font-size: 156px;
   line-height: 220px;
-  background-image: url("../img/background-year.webp");
+  background: url("../img/background-year.webp"), $color-deep-sky-blue;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: $color-default-white;

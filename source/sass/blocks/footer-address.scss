@@ -28,6 +28,22 @@
   }
 }
 
+.footer-address li {
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-semi-transperent;
+  margin-bottom: 10px;
+
+  @include vp-374() {
+    font-size: 14px;
+    line-height: 18px;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+
 .footer-address__header {
   margin-bottom: 20px;
 

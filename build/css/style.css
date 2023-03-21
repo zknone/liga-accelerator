@@ -393,8 +393,24 @@ template {
 }
 
 @font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "PTmono";
+  font-display: swap;
+  src: url("../fonts/pt-mono_regular.woff2") format("woff2");
+}
+
+@font-face {
   font-style: normal;
   font-weight: 400;
+  font-family: "RobotoCondensed";
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: bold;
+  font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
@@ -630,7 +646,8 @@ button,
   padding: 10px 20px;
   color: rgb(242, 245, 246);
   font-family: "RobotoCondensed", "Arial", sans-serif;
-  font-weight: 700px;
+  font-style: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -1483,7 +1500,7 @@ button,
 }
 
 .header {
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-size: 64px;
   line-height: 75px;
@@ -1495,6 +1512,7 @@ button,
 }
 
 .header--h2 {
+  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 50px;
@@ -1521,11 +1539,12 @@ button,
 }
 
 .header--services {
-  color: rgb(242, 245, 246);
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-transform: none;
+  color: rgb(242, 245, 246);
 }
 
 .header--modal {
@@ -1538,9 +1557,9 @@ button,
   margin-top: -15px;
   position: relative;
   padding: 185px 70px 280px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center;
-  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center, #214e71;
+  background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
   background-size: cover;
 }
 
@@ -1553,22 +1572,6 @@ button,
   line-height: 34px;
   color: rgb(242, 245, 246);
   margin-bottom: 40px;
-}
-
-.text--footer-white {
-  font-size: 16px;
-  line-height: 21px;
-  color: rgba(248, 253, 255, 0.7);
-}
-
-.text--form {
-  color: rgb(242, 245, 246);
-}
-
-.text--modal {
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
 }
 
 .footer-socials {
@@ -1662,6 +1665,10 @@ button,
   display: block;
 }
 
+.footer-navigation__list li {
+  margin-bottom: 10px;
+}
+
 .footer-navigation__header {
   margin-bottom: 20px;
 }
@@ -1724,6 +1731,13 @@ button,
   display: block;
 }
 
+.footer-address li {
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(248, 253, 255, 0.7);
+  margin-bottom: 10px;
+}
+
 .footer-address__header {
   margin-bottom: 20px;
 }
@@ -1774,8 +1788,8 @@ button,
   background: -webkit-gradient(linear, right top, left top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, #00b2ff));
   background: -o-linear-gradient(right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, #00b2ff 50%);
   background: linear-gradient(to left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, #00b2ff 50%);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
@@ -1803,8 +1817,8 @@ button,
   background: -webkit-gradient(linear, left top, right top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, rgba(248, 253, 255, 0.7)));
   background: -o-linear-gradient(left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(248, 253, 255, 0.7) 50%);
   background: linear-gradient(to right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(248, 253, 255, 0.7) 50%);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
@@ -1881,7 +1895,7 @@ button,
 }
 
 .advantages h3 {
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 24px;
@@ -1929,10 +1943,11 @@ button,
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-style: bold;
   font-weight: 700;
   font-size: 156px;
   line-height: 220px;
-  background-image: url("../img/background-year.webp");
+  background: url("../img/background-year.webp"), #00b2ff;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1993,7 +2008,7 @@ button,
   padding: 50px 40px;
   width: 28%;
   min-height: 650px;
-  background: url("../img/services-background.webp") no-repeat;
+  background: url("../img/services-background.webp") no-repeat, #214e71;
   background-size: 1500px 817px;
 }
 
@@ -2061,10 +2076,9 @@ button,
 
 .form {
   position: relative;
-  background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat;
+  background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat, #00b2ff;
   background-size: 510px 285px, cover;
   background-position: calc(40% - 300px) 40%, center;
-  position: relative;
   z-index: 1;
 }
 
@@ -2080,6 +2094,7 @@ button,
 
 .form p {
   padding-bottom: 35px;
+  color: rgb(242, 245, 246);
 }
 
 .form__form {
@@ -2583,16 +2598,6 @@ button,
     margin-left: 0;
   }
 
-  .text {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  .text--footer-white {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
   .footer-socials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2640,6 +2645,15 @@ button,
 
   .footer-address__list.is-deactivate {
     display: none;
+  }
+
+  .footer-address li {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .footer-address li:first-child {
+    margin-bottom: 15px;
   }
 
   .footer-address__header {
@@ -2706,6 +2720,8 @@ button,
   }
 
   .form p {
+    font-size: 14px;
+    line-height: 19px;
     padding-bottom: 40px;
   }
 

@@ -7,8 +7,24 @@
 }
 
 @font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "PTmono";
+  font-display: swap;
+  src: url("../fonts/pt-mono_regular.woff2") format("woff2");
+}
+
+@font-face {
   font-style: normal;
   font-weight: 400;
+  font-family: "RobotoCondensed";
+  font-display: swap;
+  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: bold;
+  font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");

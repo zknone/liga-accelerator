@@ -7,6 +7,8 @@
     <meta name="description" content="Описание проекта" />
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font"/>
+    <link rel="preload" href="fonts/pt-mono_regular.woff2" as="font"/>
   </head>
   <body>
     <header>
@@ -205,7 +207,7 @@
             <h2 class="header header--h2 header--basic-white">
               Остались вопросы? Задайте их нам!
             </h2>
-            <p class="text text--form">
+            <p>
               Мы проконсультируем вас бесплатно
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
@@ -269,29 +271,25 @@
               </span>
             </button>
             <ul class="footer-navigation__list is-deactivate" data-footer-navigation-list>
-              <li class="footer-navigation__item">
-                <a href="#" class="footer-navigation__link link link--footer-white">
-                  О Компании
-                  </a>
+              <li>
+                <a href="#" class="footer-navigation__link link link--footer-white">О Компании</a>
               </li>
-              <li class="footer-navigation__item">
-                <a href="#" class="footer-navigation__link link link--footer-white">
-                  Продукты
-                </a>
+              <li>
+                <a href="#" class="footer-navigation__link link link--footer-white">Продукты</a>
               </li>
-              <li class="footer-navigation__item">
+              <li>
                 <a href="#" class="footer-navigation__link link link--footer-white">Производство печатных плат</a>
               </li>
-              <li class="footer-navigation__item">
+              <li>
                 <a href="#" class="footer-navigation__link link link--footer-white">Монтаж печатных плат</a>
               </li>
-              <li class="footer-navigation__item">
+              <li>
                 <a href="#" class="footer-navigation__link link link--footer-white">Комплектующие</a>
               </li>
-              <li class="footer-navigation__item">
+              <li>
                 <a href="#" class="footer-navigation__link link link--footer-white">Доставка</a>
               </li>
-              <li class="footer-navigation__item">
+              <li>
                 <a href="#" class="footer-navigation__link link link--footer-white">Контакты</a>
               </li>
             </ul>
@@ -306,20 +304,20 @@
                 </span>
             </button>
             <ul class="footer-address__list is-deactivate" data-footer-address-list>
-              <li class="footer-address__item text text--footer-white">
+              <li>
                 г. Мытищи, Олимпийский проспект, д.10
               </li>
-              <li class="footer-address__item">
+              <li>
                 <a href="tel:+7(495)5894050" class="footer-address__link link link--footer-white">
                   +7 (495) 589-40-50
                 </a>
               </li>
-              <li class="footer-address__item">
+              <li>
                 <a href="tel:+7(925)3895829" class="footer-address__link link link--footer-white">
                   +7 (925) 389-58-29
                 </a>
               </li>
-              <li class="footer-address__item">
+              <li>
                 <a href="tel:+7(925)3647813" class="footer-address__link link link--footer-white">
                   +7 (925) 364-78-13
                 </a>
@@ -355,7 +353,7 @@
               <textarea placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
             </label>
             <button type="submit" class="btn btn--black btn--form">Задать вопрос</button>
-            <label class="custom-toggle custom-toggle--checkbox text text--checkbox">
+            <label class="custom-toggle custom-toggle--checkbox">
               <input type="checkbox" checked required/>Я согласен на обработку персональных данных
               <span class="custom-toggle__icon"></span>
             </label>
