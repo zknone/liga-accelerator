@@ -418,7 +418,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 21px;
   font-family: "PTmono", "Arial", sans-serif;
   color: #041827;
   -webkit-font-smoothing: antialiased;
@@ -430,6 +430,11 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgb(242, 245, 246);
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -1550,15 +1555,6 @@ button,
   margin-bottom: 40px;
 }
 
-.text {
-  margin: 0;
-  padding: 0;
-  font-family: "PTmono", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 21px;
-  color: #041827;
-}
-
 .text--intro-white {
   font-size: 22px;
   line-height: 34px;
@@ -1915,6 +1911,18 @@ button,
   background-color: #f8fdff;
 }
 
+.about p {
+  padding-bottom: 30px;
+}
+
+.about p :last-child {
+  padding-bottom: 45px;
+}
+
+.about p.is-active {
+  display: none;
+}
+
 .about__container {
   position: relative;
 }
@@ -1945,18 +1953,6 @@ button,
 
 .about__header {
   padding-bottom: 15px;
-}
-
-.about__text {
-  padding-bottom: 30px;
-}
-
-.about__text :last-child {
-  padding-bottom: 45px;
-}
-
-.about__text.is-active {
-  display: none;
 }
 
 .about__button {
@@ -2401,7 +2397,7 @@ button,
     padding-bottom: 15px;
   }
 
-  .about__text {
+  .about p {
     padding-bottom: 20px;
   }
 
@@ -2575,11 +2571,6 @@ button,
     margin-left: 0;
   }
 
-  .text {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
   .text--intro-white {
     font-size: 14px;
     line-height: 22px;
@@ -2663,6 +2654,11 @@ button,
   .link--footer-white {
     font-size: 14px;
     line-height: 18px;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 19px;
   }
 
   .about__year {
