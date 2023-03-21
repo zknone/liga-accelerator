@@ -1,4 +1,4 @@
-.social-n-logo {
+.footer-socials {
   display: flex;
   list-style-type: none;
   flex-direction: column;
@@ -20,7 +20,7 @@
   }
 }
 
-.social-n-logo__logo {
+.footer-socials__logo {
   margin-bottom: 30px;
 
   @include vp-767() {
@@ -32,7 +32,7 @@
   }
 }
 
-.social-n-logo__social-list {
+.footer-socials__social-list {
   list-style-type: none;
   display: flex;
   margin: 0;
@@ -40,13 +40,13 @@
   column-gap: 15px;
 }
 
-.social-n-logo__social-link {
+.footer-socials__social-link {
   display: block;
   width: 40px;
   height: 40px;
   padding: 5px;
 
-  & .social-n-logo__social-icon {
+  & .footer-socials__social-icon {
     color: $color-default-white;
     transition: color 500ms ease;
 

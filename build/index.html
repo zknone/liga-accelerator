@@ -13,29 +13,13 @@
       <nav class="navigation">
         <div class="navigation__container container">
           <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="./img/logo-tablet.svg"
-              width="215"
-              height="55"
-            />
-            <img
-              src="./img/logo.svg"
-              alt="Логотип Smart Device"
-              class="navigation__logo"
-              width="35"
-              height="35"
-            />
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" width="215" height="55"/>
+            <img src="./img/logo.svg" alt="Логотип Smart Device" class="navigation__logo" width="35" height="35"/>
           </picture>
           <ul class="navigation__list">
             <li class="navigation__item">
               <a href="mailto:info@sd.ru" class="navigation__link link link--menu-link">
-                <svg
-                  class="navigation__icon"
-                  aria-label="Написать нам."
-                  width="15"
-                  height="15"
-                >
+                <svg class="navigation__icon" aria-label="Написать нам." width="15" height="15">
                   <use xlink:href="./img/sprite.svg#mail"></use>
                 </svg>
                 info@sd.ru
@@ -43,12 +27,7 @@
             </li>
             <li class="navigation__item">
               <a href="tel:+7(495)0005252" class="navigation__link link link--menu-link">
-                <svg
-                  class="navigation__icon"
-                  aria-label="Позвонить нам."
-                  width="15"
-                  height="15"
-                >
+                <svg class="navigation__icon" aria-label="Позвонить нам." width="15" height="15">
                   <use xlink:href="./img/sprite.svg#phone"></use>
                 </svg>
                 +7 (495) 000 52 52
@@ -182,36 +161,36 @@
           </h2>
           <ul class="services__list">
             <li class="services__item services__item--first">
-              <a href="/item-1.html">
+              <a href="#">
                 <h3 class="services__item-header header header--services">
                   Производство печатных плат
                 </h3>
               </a>
-              <a href="/item-1.html" class="services__item-link link">
+              <a href="#" class="services__item-link link">
                 <svg width="15" height="15">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
               </a>
             </li>
             <li class="services__item services__item--second">
-              <a href="/item-2.html">
+              <a href="#">
                 <h3 class="services__item-header header header--services">
                   Монтаж печатных плат
                 </h3>
               </a>
-              <a href="/item-2.html" class="services__item-link">
+              <a href="#" class="services__item-link">
                 <svg width="15" height="15">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
               </a>
             </li>
             <li class="services__item services__item--third">
-              <a href="/item-3.html">
+              <a href="#">
                 <h3 class="services__item-header header header--services">
                   Комплектующие для светотехники
                 </h3>
               </a>
-              <a href="/item-3.html" class="services__item-link">
+              <a href="#" class="services__item-link">
                 <svg width="15" height="15">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -231,10 +210,10 @@
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
               <label class="form__label form__label--name">
-                <input type="text" class="form__input text text--form" placeholder="Имя"/>
+                <input type="text" name="name" class="form__input text text--form" placeholder="Имя" aria-label="Имя" required/>
               </label>
               <label class="form__label form__label--phone">
-                <input type="text" class="form__input text text--form" pattern="[7-9]{1}[0-9]{9}" placeholder="Телефон"/>
+                <input type="text" name="phone" class="form__input text text--form" pattern="[7-9]{1}[0-9]{9}" placeholder="Телефон" aria-label="Телефон" minlength="10" maxlength="10" required/>
               </label>
               <label class="form__label form__label--question">
                 <textarea class="form__text-area text text--form" placeholder="Ваш вопрос"></textarea>
@@ -243,7 +222,7 @@
                 Задать вопрос
               </button>
               <label class="form__checkbox custom-toggle custom-toggle--checkbox text text--checkbox">
-                <input type="checkbox" checked />Я согласен на обработку персональных данных
+                <input type="checkbox" checked required/>Я согласен на обработку персональных данных
                 <span class="custom-toggle__icon"> </span>
               </label>
             </form>
@@ -253,32 +232,26 @@
     </main>
     <footer class="footer">
       <div class="footer__container">
-        <div class="footer__logo-wrapper social-n-logo">
-          <img
-            src="./img/logo-tablet.svg"
-            alt="Логотип Smart Device"
-            class="social-n-logo__logo"
-            width="215"
-            height="55"
-          />
-          <ul class="social-n-logo__social-list">
-            <li class="social-n-logo__social-item">
-              <a href="ok.ru" class="social-n-logo__social-link">
-                <svg width="30" height="30" class="social-n-logo__social-icon">
+        <div class="footer__logo-wrapper footer-socials">
+          <img src="./img/logo-tablet.svg" alt="Логотип Smart Device" class="footer-socials__logo" width="215" height="55"/>
+          <ul class="footer-socials__social-list">
+            <li class="footer-socials__social-item">
+              <a href="ok.ru" class="footer-socials__social-link">
+                <svg width="30" height="30" class="footer-socials__social-icon">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-n-logo__social-item">
-              <a href="vk.ru" class="social-n-logo__social-link">
-                <svg width="30" height="30" class="social-n-logo__social-icon">
+            <li class="footer-socials__social-item">
+              <a href="vk.ru" class="footer-socials__social-link">
+                <svg width="30" height="30" class="footer-socials__social-icon">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-n-logo__social-item">
-              <a href="pinterest.com" class="social-n-logo__social-link">
-                <svg width="33" height="33" class="social-n-logo__social-icon">
+            <li class="footer-socials__social-item">
+              <a href="pinterest.com" class="footer-socials__social-link">
+                <svg width="33" height="33" class="footer-socials__social-icon">
                   <use xlink:href="img/sprite.svg#pinterest"></use>
                 </svg>
               </a>
@@ -297,78 +270,59 @@
             </button>
             <ul class="footer-navigation__list is-deactivate" data-footer-navigation-list>
               <li class="footer-navigation__item">
-                <a href="about.html" class="footer-navigation__link link link--footer-white">
+                <a href="#" class="footer-navigation__link link link--footer-white">
                   О Компании
                   </a>
               </li>
               <li class="footer-navigation__item">
-                <a href="sevices.html" class="footer-navigation__link link link--footer-white">
+                <a href="#" class="footer-navigation__link link link--footer-white">
                   Продукты
                 </a>
               </li>
               <li class="footer-navigation__item">
-                <a href="production.html" class="footer-navigation__link link link--footer-white">Производство печатных плат</a>
+                <a href="#" class="footer-navigation__link link link--footer-white">Производство печатных плат</a>
               </li>
               <li class="footer-navigation__item">
-                <a href="install.html" class="footer-navigation__link link link--footer-white">Монтаж печатных плат</a>
+                <a href="#" class="footer-navigation__link link link--footer-white">Монтаж печатных плат</a>
               </li>
               <li class="footer-navigation__item">
-                <a href="components.html" class="footer-navigation__link link link--footer-white">Комплектующие</a>
+                <a href="#" class="footer-navigation__link link link--footer-white">Комплектующие</a>
               </li>
               <li class="footer-navigation__item">
-                <a href="delivery.html" class="footer-navigation__link link link--footer-white">Доставка</a>
+                <a href="#" class="footer-navigation__link link link--footer-white">Доставка</a>
               </li>
               <li class="footer-navigation__item">
-                <a href="contacts.html" class="footer-navigation__link link link--footer-white">Контакты</a>
+                <a href="#" class="footer-navigation__link link link--footer-white">Контакты</a>
               </li>
             </ul>
           </div>
-          <div
-            class="footer__address-wrapper footer-address"
-            data-footer-address
-          >
-            <h3
-              class="footer-address__header header header--white header--footer"
-            >
+          <div class="footer__address-wrapper footer-address" data-footer-address>
+            <h3 class="footer-address__header header header--white header--footer">
               Наш офис
             </h3>
-            <button
-              class="footer-address__accordeon-button"
-              data-footer-address-button
-            >
-              <span
-                class="footer-address__button-sign is-lost"
-                data-address-sign
-                >Открыть</span
-              >
+            <button class="footer-address__accordeon-button" data-footer-address-button>
+              <span class="footer-address__button-sign is-lost" data-address-sign>
+                Открыть
+                </span>
             </button>
-            <ul
-              class="footer-address__list is-deactivate"
-              data-footer-address-list
-            >
+            <ul class="footer-address__list is-deactivate" data-footer-address-list>
               <li class="footer-address__item text text--footer-white">
                 г. Мытищи, Олимпийский проспект, д.10
               </li>
               <li class="footer-address__item">
-                <a
-                  href="tel:+7(495)5894050"
-                  class="footer-address__link link link--footer-white"
-                  >+7 (495) 589-40-50</a
-                >
+                <a href="tel:+7(495)5894050" class="footer-address__link link link--footer-white">
+                  +7 (495) 589-40-50
+                </a>
               </li>
               <li class="footer-address__item">
-                <a
-                  href="tel:+7(925)3895829"
-                  class="footer-address__link link link--footer-white"
-                  >+7 (925) 389-58-29</a
-                >
+                <a href="tel:+7(925)3895829" class="footer-address__link link link--footer-white">
+                  +7 (925) 389-58-29
+                </a>
               </li>
               <li class="footer-address__item">
-                <a
-                  href="tel:+7(925)3647813"
-                  class="footer-address__link link link--footer-white"
-                  >+7 (925) 364-78-13</a
-                >
+                <a href="tel:+7(925)3647813" class="footer-address__link link link--footer-white">
+                  +7 (925) 364-78-13
+                </a>
               </li>
             </ul>
           </div>
@@ -381,12 +335,7 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <button
-            class="modal__close-btn"
-            type="button"
-            aria-label="Закрыть попап"
-            data-close-button
-          >
+          <button class="modal__close-btn" type="button" aria-label="Закрыть попап" data-close-button>
             <svg width="15" height="15">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
@@ -395,31 +344,19 @@
           <p class="modal__description">
             Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
           </p>
-          <form
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-            class="modal__form"
-          >
-            <label class="modal__form-label" aria-label="Имя">
-              <input type="text" class="modal__form-input" placeholder="Имя"/>
+          <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
+            <label class="modal__form-label">
+              <input type="text" name="name" class="modal__form-input" placeholder="Имя" aria-label="Имя" required/>
             </label>
-            <label class="modal__form-label" aria-label="Телефон">
-              <input
-                type="text"
-                class="modal__form-input"
-                placeholder="Телефон"
-                pattern="[7-9]{1}[0-9]{9}"
-              />
+            <label class="modal__form-label">
+              <input type="text" name="phone" class="modal__form-input" placeholder="Телефон" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" aria-label="Телефон" required/>
             </label>
-            <label class="modal__form-label" aria-label="Ваш вопрос">
-              <textarea
-                class="modal__form-text-area"
-                placeholder="Ваш вопрос"
-              ></textarea>
+            <label class="modal__form-label">
+              <textarea class="modal__form-text-area" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
             </label>
             <button type="submit" class="modal__form-button btn btn--black btn--form">Задать вопрос</button>
-            <label class="modal__form-checkbox custom-toggle custom-toggle--checkbox text text--checkbox" aria-label="Я согласен на обработку персональных">
-              <input type="checkbox" checked/>Я согласен на обработку персональных данных
+            <label class="modal__form-checkbox custom-toggle custom-toggle--checkbox text text--checkbox">
+              <input type="checkbox" checked required/>Я согласен на обработку персональных данных
               <span class="custom-toggle__icon"></span>
             </label>
           </form>

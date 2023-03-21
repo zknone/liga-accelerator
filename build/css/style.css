@@ -1599,7 +1599,7 @@ button,
   color: #ffffff;
 }
 
-.social-n-logo {
+.footer-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1615,11 +1615,11 @@ button,
   padding: 55px 30px 50px 50px;
 }
 
-.social-n-logo__logo {
+.footer-socials__logo {
   margin-bottom: 30px;
 }
 
-.social-n-logo__social-list {
+.footer-socials__social-list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1631,30 +1631,30 @@ button,
   column-gap: 15px;
 }
 
-.social-n-logo__social-link {
+.footer-socials__social-link {
   display: block;
   width: 40px;
   height: 40px;
   padding: 5px;
 }
 
-.social-n-logo__social-link .social-n-logo__social-icon {
+.footer-socials__social-link .footer-socials__social-icon {
   color: rgb(242, 245, 246);
   -webkit-transition: color 500ms ease;
   -o-transition: color 500ms ease;
   transition: color 500ms ease;
 }
 
-.social-n-logo__social-link .social-n-logo__social-icon.focus-visible:focus {
+.footer-socials__social-link .footer-socials__social-icon.focus-visible:focus {
   color: #00b2ff;
   outline: 2px solid rgb(242, 245, 246);
 }
 
-.social-n-logo__social-link .social-n-logo__social-icon:active {
+.footer-socials__social-link .footer-socials__social-icon:active {
   color: #00b2ff;
 }
 
-.social-n-logo__social-link .social-n-logo__social-icon:disabled {
+.footer-socials__social-link .footer-socials__social-icon:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -2356,7 +2356,7 @@ button,
     margin-left: 45px;
   }
 
-  .social-n-logo {
+  .footer-socials {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -2367,7 +2367,7 @@ button,
     padding: 55px 32px;
   }
 
-  .social-n-logo__logo {
+  .footer-socials__logo {
     margin-bottom: 0;
   }
 
@@ -2595,7 +2595,7 @@ button,
     line-height: 18px;
   }
 
-  .social-n-logo {
+  .footer-socials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2604,7 +2604,7 @@ button,
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
-  .social-n-logo__logo {
+  .footer-socials__logo {
     margin-bottom: 15px;
   }
 
@@ -2730,7 +2730,7 @@ button,
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .social-n-logo__social-link .social-n-logo__social-icon:hover:not(.focus-visible) {
+  .footer-socials__social-link .footer-socials__social-icon:hover:not(.focus-visible) {
     color: #00b2ff;
     background-position: 0 100%;
   }
