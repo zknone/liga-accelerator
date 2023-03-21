@@ -47,12 +47,12 @@
         Smart Device производство и печать компьютерных плат
       </h1>
       <section class="intro">
-        <div class="intro__container container">
+        <div class="container">
           <h2 class="intro__header header">Печатные платы</h2>
-          <p class="intro__text text text--intro-white">
+          <p>
             производство и монтаж, поставка комплектующих, блоков и модулей
           </p>
-          <button class="intro__button btn btn--intro">
+          <button class="btn btn--intro">
             Получить бесплатную консультацию
           </button>
         </div>
@@ -156,13 +156,13 @@
       </section>
       <section class="services">
         <div class="services__container container">
-          <h2 class="services__header header header--h2 header--white">
+          <h2 class="header header--h2 header--white">
             Smart Device предлагает следующие товары и услуги
           </h2>
-          <ul class="services__list">
+          <ul>
             <li class="services__item services__item--first">
               <a href="#">
-                <h3 class="services__item-header header header--services">
+                <h3 class="header header--services">
                   Производство печатных плат
                 </h3>
               </a>
@@ -174,7 +174,7 @@
             </li>
             <li class="services__item services__item--second">
               <a href="#">
-                <h3 class="services__item-header header header--services">
+                <h3 class="header header--services">
                   Монтаж печатных плат
                 </h3>
               </a>
@@ -186,7 +186,7 @@
             </li>
             <li class="services__item services__item--third">
               <a href="#">
-                <h3 class="services__item-header header header--services">
+                <h3 class="header header--services">
                   Комплектующие для светотехники
                 </h3>
               </a>
@@ -202,10 +202,10 @@
       <section class="form">
         <div class="container">
           <div class="form__wrapper">
-            <h2 class="form__header header header--h2 header--basic-white">
+            <h2 class="header header--h2 header--basic-white">
               Остались вопросы? Задайте их нам!
             </h2>
-            <p class="form__text text text--form">
+            <p class="text text--form">
               Мы проконсультируем вас бесплатно
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
@@ -221,7 +221,7 @@
               <button type="submit" class="btn btn--black btn--form">
                 Задать вопрос
               </button>
-              <label class="form__checkbox custom-toggle custom-toggle--checkbox text text--checkbox">
+              <label class="custom-toggle custom-toggle--checkbox" data-form="checkbox">
                 <input type="checkbox" checked required/>Я согласен на обработку персональных данных
                 <span class="custom-toggle__icon"> </span>
               </label>
@@ -340,22 +340,22 @@
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
-          <h2 class="modal__header header header--modal">Закажите звонок</h2>
-          <p class="modal__description">
+          <h2 class="header header--modal">Закажите звонок</h2>
+          <p>
             Оставьте контакты, мы проконсультируем вас бесплатно в удобное время
           </p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
-            <label class="modal__form-label">
-              <input type="text" name="name" class="modal__form-input" placeholder="Имя" aria-label="Имя" required/>
+            <label>
+              <input type="text" name="name" placeholder="Имя" aria-label="Имя" required/>
             </label>
-            <label class="modal__form-label">
-              <input type="text" name="phone" class="modal__form-input" placeholder="Телефон" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" aria-label="Телефон" required/>
+            <label>
+              <input type="text" name="phone" placeholder="Телефон" pattern="[7-9]{1}[0-9]{9}" minlength="10" maxlength="10" aria-label="Телефон" required/>
             </label>
-            <label class="modal__form-label">
-              <textarea class="modal__form-text-area" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+            <label>
+              <textarea placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
             </label>
-            <button type="submit" class="modal__form-button btn btn--black btn--form">Задать вопрос</button>
-            <label class="modal__form-checkbox custom-toggle custom-toggle--checkbox text text--checkbox">
+            <button type="submit" class="btn btn--black btn--form">Задать вопрос</button>
+            <label class="custom-toggle custom-toggle--checkbox text text--checkbox">
               <input type="checkbox" checked required/>Я согласен на обработку персональных данных
               <span class="custom-toggle__icon"></span>
             </label>

@@ -812,8 +812,13 @@ button,
   pointer-events: auto;
 }
 
-.modal__header {
+.modal h2 {
   margin-bottom: 15px;
+}
+
+.modal p {
+  margin-bottom: 40px;
+  color: #ffffff;
 }
 
 .modal__form {
@@ -826,16 +831,16 @@ button,
   flex-direction: column;
 }
 
-.modal__form-label {
+.modal__form label {
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.modal__form-label:last-child {
+.modal__form label:last-child {
   margin-bottom: 25px;
 }
 
-.modal__form-input {
+.modal__form input {
   width: 100%;
   padding: 15px;
   color: #ffffff;
@@ -846,25 +851,20 @@ button,
   transition: background-color 300ms ease;
 }
 
-.modal__form-input:hover {
+.modal__form input:hover {
   background-color: rgba(4, 20, 39, 0.25);
 }
 
-.modal__form-input:focus {
+.modal__form input:focus {
   background-color: rgba(4, 20, 39, 0.25);
   outline: 1px solid rgba(248, 253, 255, 0.7);
 }
 
-.modal__form-input:active {
+.modal__form input:active {
   background-color: rgba(4, 20, 39, 0.3);
 }
 
-.modal__description {
-  margin-bottom: 40px;
-  color: #ffffff;
-}
-
-.modal__form-text-area {
+.modal__form textarea {
   min-height: 155px;
   height: 100%;
   width: 100%;
@@ -877,20 +877,20 @@ button,
   transition: background-color 300ms ease;
 }
 
-.modal__form-text-area:hover {
+.modal__form textarea:hover {
   background-color: rgba(4, 20, 39, 0.25);
 }
 
-.modal__form-text-area:focus {
+.modal__form textarea:focus {
   background-color: rgba(4, 20, 39, 0.25);
   outline: 1px solid rgba(248, 253, 255, 0.7);
 }
 
-.modal__form-text-area:active {
+.modal__form textarea:active {
   background-color: rgba(4, 20, 39, 0.3);
 }
 
-.modal__form-button {
+.modal__form button {
   margin-bottom: 20px;
 }
 
@@ -1491,6 +1491,7 @@ button,
   color: rgb(242, 245, 246);
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 .header--h2 {
@@ -1498,6 +1499,7 @@ button,
   font-size: 36px;
   line-height: 50px;
   color: #041827;
+  text-transform: none;
 }
 
 .header--black {
@@ -1523,6 +1525,7 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
+  text-transform: none;
 }
 
 .header--modal {
@@ -1541,18 +1544,15 @@ button,
   background-size: cover;
 }
 
-.intro__header {
+.intro h2 {
   margin-bottom: 40px;
 }
 
-.intro__text.text {
-  margin-bottom: 40px;
-}
-
-.text--intro-white {
+.intro p {
   font-size: 22px;
   line-height: 34px;
   color: rgb(242, 245, 246);
+  margin-bottom: 40px;
 }
 
 .text--footer-white {
@@ -1563,12 +1563,6 @@ button,
 
 .text--form {
   color: rgb(242, 245, 246);
-}
-
-.text--checkbox {
-  color: rgb(242, 245, 246);
-  font-size: 14px;
-  line-height: 16px;
 }
 
 .text--modal {
@@ -1977,11 +1971,11 @@ button,
   padding-bottom: 140px;
 }
 
-.services__header {
+.services h2 {
   margin-bottom: 50px;
 }
 
-.services__list {
+.services ul {
   padding: 0;
   margin: 0;
   -webkit-column-gap: 85px;
@@ -2080,11 +2074,11 @@ button,
   padding-bottom: 250px;
 }
 
-.form__header {
+.form h2 {
   padding-bottom: 15px;
 }
 
-.form__text {
+.form p {
   padding-bottom: 35px;
 }
 
@@ -2127,6 +2121,16 @@ button,
   grid-area: text-area;
   min-height: 155px;
   max-width: 580px;
+}
+
+.form__form label[data-form=checkbox] {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  color: rgb(242, 245, 246);
+  font-size: 14px;
+  line-height: 16px;
+  grid-area: checkbox;
+  max-width: 275px;
 }
 
 .form__form input {
@@ -2189,13 +2193,6 @@ button,
   height: fit-content;
   max-width: 275px;
   width: calc(100% - 10px);
-}
-
-.form__checkbox {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-  grid-area: checkbox;
-  max-width: 275px;
 }
 
 .container {
@@ -2348,15 +2345,15 @@ button,
     padding: 80px 0 205px;
   }
 
-  .intro__header {
+  .intro h2 {
     margin-bottom: 20px;
   }
 
-  .intro__text.text {
+  .intro p {
     margin-bottom: 50px;
   }
 
-  .intro__button {
+  .intro button {
     margin-left: 45px;
   }
 
@@ -2424,7 +2421,7 @@ button,
     padding-bottom: 75px;
   }
 
-  .services__list {
+  .services ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2460,11 +2457,11 @@ button,
     padding-bottom: 125px;
   }
 
-  .form__header {
+  .form h2 {
     padding-bottom: 15px;
   }
 
-  .form__text {
+  .form p {
     padding-bottom: 25px;
   }
 
@@ -2576,22 +2573,19 @@ button,
     padding: 80px 0 190px;
   }
 
-  .intro__text.text {
+  .intro p {
     margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
-  .intro__button {
+  .intro button {
     margin-left: 0;
   }
 
   .text {
     font-size: 14px;
     line-height: 19px;
-  }
-
-  .text--intro-white {
-    font-size: 14px;
-    line-height: 22px;
   }
 
   .text--footer-white {
@@ -2692,7 +2686,7 @@ button,
     padding-bottom: 80px;
   }
 
-  .services__header {
+  .services h2 {
     margin-bottom: 40px;
   }
 
@@ -2707,11 +2701,11 @@ button,
     padding-bottom: 90px;
   }
 
-  .form__header {
+  .form h2 {
     padding-bottom: 20px;
   }
 
-  .form__text {
+  .form p {
     padding-bottom: 40px;
   }
 

@@ -19,7 +19,7 @@
   }
 }
 
-.intro__header {
+.intro h2 {
   margin-bottom: 40px;
 
   @include vp-767() {
@@ -27,21 +27,25 @@
   }
 }
 
-.intro__text {
-  &.text {
-    margin-bottom: 40px;
+.intro p {
+  font-size: 22px;
+  line-height: 34px;
+  color: $color-default-white;
 
-    @include vp-767() {
-      margin-bottom: 50px;
-    }
+  margin-bottom: 40px;
 
-    @include vp-374() {
-      margin-bottom: 50px;
-    }
+  @include vp-767() {
+    margin-bottom: 50px;
+  }
+
+  @include vp-374() {
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
-.intro__button {
+.intro button {
   @include vp-374() {
     margin-left: 0;
   }

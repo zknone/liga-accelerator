@@ -30,7 +30,7 @@
   }
 }
 
-.form__header {
+.form h2 {
   padding-bottom: 15px;
 
   @include vp-767() {
@@ -42,7 +42,7 @@
   }
 }
 
-.form__text {
+.form p {
   padding-bottom: 35px;
 
   @include vp-767() {
@@ -88,6 +88,15 @@
     grid-area: text-area;
     min-height: 155px;
     max-width: 580px;
+  }
+
+  &[data-form="checkbox"] {
+    color: $color-default-white;
+    font-size: 14px;
+    line-height: 16px;
+
+    grid-area: checkbox;
+    max-width: 275px;
   }
 }
 
@@ -165,9 +174,4 @@
     max-width: none;
     width: 100%;
   }
-}
-
-.form__checkbox {
-  grid-area: checkbox;
-  max-width: 275px;
 }

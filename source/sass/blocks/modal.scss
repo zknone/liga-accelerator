@@ -130,8 +130,13 @@
   }
 }
 
-.modal__header {
+.modal h2 {
   margin-bottom: 15px;
+}
+
+.modal p {
+  margin-bottom: 40px;
+  color: $color-basic-white;
 }
 
 .modal__form {
@@ -139,7 +144,7 @@
   flex-direction: column;
 }
 
-.modal__form-label {
+.modal__form label {
   color: $color-basic-white;
   margin-bottom: 20px;
 
@@ -148,7 +153,7 @@
   }
 }
 
-.modal__form-input {
+.modal__form input {
   width: 100%;
   padding: 15px;
   color: $color-basic-white;
@@ -171,12 +176,9 @@
   }
 }
 
-.modal__description {
-  margin-bottom: 40px;
-  color: $color-basic-white;
-}
 
-.modal__form-text-area {
+
+.modal__form textarea {
   min-height: 155px;
   height: 100%;
   width: 100%;
@@ -200,6 +202,6 @@
   }
 }
 
-.modal__form-button {
+.modal__form button {
   margin-bottom: 20px;
 }
