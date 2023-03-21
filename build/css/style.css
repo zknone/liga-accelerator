@@ -1561,12 +1561,6 @@ button,
   color: rgba(248, 253, 255, 0.7);
 }
 
-.text--form-white {
-  font-size: 16px;
-  line-height: 21px;
-  color: rgba(248, 253, 255, 0.7);
-}
-
 .text--form {
   color: rgb(242, 245, 246);
 }
@@ -1852,6 +1846,8 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+  grid-template-rows: repeat(2, 1fr);
   row-gap: 30px;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -1953,7 +1949,15 @@ button,
   padding: 0 0 120px 200px;
 }
 
-.about__header {
+.about h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  color: #041827;
+  margin: 0;
+  padding: 0;
   padding-bottom: 15px;
 }
 
@@ -2098,25 +2102,25 @@ button,
   row-gap: 20px;
 }
 
-.form__label {
+.form__form label {
   color: #ffffff;
 }
 
-.form__label--name {
+.form__form label[data-form=name] {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: user_name;
   max-width: 275px;
 }
 
-.form__label--phone {
+.form__form label[data-form=phone] {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: phone;
   max-width: 275px;
 }
 
-.form__label--question {
+.form__form label[data-form=question] {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -2125,56 +2129,58 @@ button,
   max-width: 580px;
 }
 
-.form__input {
+.form__form input {
   width: 100%;
   padding: 15px;
-  color: #ffffff;
   background-color: rgba(4, 20, 39, 0.15);
   border: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(248, 253, 255, 0.7);
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
 
-.form__input:hover {
+.form__form input:hover {
   background-color: rgba(4, 20, 39, 0.25);
 }
 
-.form__input:focus {
+.form__form input:focus {
   background-color: rgba(4, 20, 39, 0.25);
   outline: 1px solid rgba(248, 253, 255, 0.7);
 }
 
-.form__input:active {
+.form__form input:active {
   background-color: rgba(4, 20, 39, 0.3);
 }
 
-.form__text-area {
+.form__form textarea {
   height: 100%;
   width: 100%;
   padding: 25px 15px;
   border: none;
-  color: #ffffff;
+  color: rgba(248, 253, 255, 0.7);
   background-color: rgba(4, 20, 39, 0.15);
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
 
-.form__text-area:hover {
+.form__form textarea:hover {
   background-color: rgba(4, 20, 39, 0.25);
 }
 
-.form__text-area:focus {
+.form__form textarea:focus {
   background-color: rgba(4, 20, 39, 0.25);
   outline: 1px solid rgba(248, 253, 255, 0.7);
 }
 
-.form__text-area:active {
+.form__form textarea:active {
   background-color: rgba(4, 20, 39, 0.3);
 }
 
-.form__button {
+.form__form button {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: button;
@@ -2408,6 +2414,11 @@ button,
     padding-bottom: 20px;
   }
 
+  .about h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
   .services__container {
     padding-top: 60px;
     padding-bottom: 75px;
@@ -2457,7 +2468,7 @@ button,
     padding-bottom: 25px;
   }
 
-  .form__button {
+  .form__form button {
     max-width: none;
     width: auto;
   }
@@ -2588,11 +2599,6 @@ button,
     line-height: 18px;
   }
 
-  .text--form-white {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
   .footer-socials {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2719,7 +2725,17 @@ button,
     flex-direction: column;
   }
 
-  .form__button {
+  .form__form input {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form__form textarea {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .form__form button {
     max-width: none;
     width: 100%;
   }

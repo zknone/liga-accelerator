@@ -26,23 +26,6 @@
     }
   }
 
-  &--form-white {
-    font-size: 16px;
-    line-height: 21px;
-    color: $color-semi-transperent;
-
-    @include vp-374() {
-      font-size: 14px;
-      line-height: 18px;
-    }
-  }
-
-  &--advantages {
-    // font-size: 16px;
-    // line-height: 22px;
-    // color: $color-default-black;
-  }
-
   &--form {
     color: $color-default-white;
   }

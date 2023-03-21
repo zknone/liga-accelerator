@@ -57,8 +57,21 @@
   }
 }
 
-.about__header {
+.about h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 50px;
+  font-family: $ff-roboto;
+  color: $color-default-black;
+  margin: 0;
+  padding: 0;
   padding-bottom: 15px;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 
 .about__button {
