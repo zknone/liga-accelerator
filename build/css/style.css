@@ -1661,10 +1661,6 @@ button,
   padding: 0;
 }
 
-.footer-navigation__list.is-deactivate {
-  display: block;
-}
-
 .footer-navigation__list li {
   margin-bottom: 10px;
 }
@@ -1849,7 +1845,7 @@ button,
 .advantages ul {
   list-style-type: none;
   padding: 120px 0;
-  margin: 0;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2080,9 +2076,6 @@ button,
   background-size: 510px 285px, cover;
   background-position: calc(40% - 300px) 40%, center;
   z-index: 1;
-}
-
-.form__wrapper {
   padding-top: 170px;
   padding-left: 40%;
   padding-bottom: 250px;
@@ -2464,9 +2457,6 @@ button,
 
   .form {
     background: #00b2ff;
-  }
-
-  .form__wrapper {
     padding-left: 0;
     padding-top: 50px;
     padding-bottom: 125px;
@@ -2617,6 +2607,7 @@ button,
   }
 
   .footer-navigation__list.is-deactivate {
+    display: block;
     display: none;
   }
 
@@ -2709,7 +2700,7 @@ button,
     padding: 30px;
   }
 
-  .form__wrapper {
+  .form {
     padding-left: 0;
     padding-top: 50px;
     padding-bottom: 90px;

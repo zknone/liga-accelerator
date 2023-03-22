@@ -30,11 +30,9 @@
     flex-direction: column;
     margin-bottom: 15px;
   }
-
-  &.is-deactivate {
-    display: block;
-
     @include vp-374() {
+      &.is-deactivate {
+        display: block;
       display: none;
     }
   }

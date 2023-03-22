@@ -11,9 +11,8 @@
     <link rel="preload" href="fonts/pt-mono_regular.woff2" as="font"/>
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <div class="navigation__container container">
+    <header class="navigation">
+      <nav class="navigation__container container">
           <picture>
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="215" height="55"/>
             <img src="img/logo.svg" alt="Логотип Smart Device" class="navigation__logo" width="35" height="35"/>
@@ -41,7 +40,6 @@
               </button>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
     <main>
@@ -61,8 +59,7 @@
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества работы с нами</h2>
-        <div class="container">
-          <ul>
+          <ul class="container">
             <li>
               <svg width="35" height="35">
                 <use xlink:href="img/sprite.svg#time"></use>
@@ -113,7 +110,6 @@
               </p>
             </li>
           </ul>
-        </div>
       </section>
       <section class="about" data-about-module>
         <div class="about__container container">
@@ -203,7 +199,6 @@
       </section>
       <section class="form">
         <div class="container">
-          <div class="form__wrapper">
             <h2 class="header header--h2 header--basic-white">
               Остались вопросы? Задайте их нам!
             </h2>
@@ -228,7 +223,6 @@
                 <span class="custom-toggle__icon"> </span>
               </label>
             </form>
-          </div>
         </div>
       </section>
     </main>
