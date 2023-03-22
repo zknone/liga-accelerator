@@ -36,10 +36,6 @@
     color: $color-default-white;
   }
 
-  &--basic-white {
-    color: $color-basic-white;
-  }
-
   &--footer {
     font-size: 15px;
     line-height: 16px;
@@ -48,25 +44,6 @@
     @include vp-767 {
       font-size: 15px;
       line-height: 16px;
-    }
-  }
-
-  &--services {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    text-transform: none;
-    color: $color-default-white;
-
-    @include vp-767 {
-      font-size: 20px;
-      line-height: 30px;
-    }
-
-    @include vp-374() {
-      font-size: 18px;
-      line-height: 30px;
     }
   }
 

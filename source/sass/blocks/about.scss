@@ -2,27 +2,6 @@
   background-color: $background-alice-blue;
 }
 
-.about p {
-  padding-bottom: 30px;
-
-  :last-child {
-    padding-bottom: 45px;
-  }
-
-  @include vp-767() {
-    padding-bottom: 20px;
-  }
-
-  @include vp-374() {
-    font-size: 14px;
-    line-height: 19px;
-  }
-
-  &.is-active {
-    display: none;
-  }
-}
-
 .about__container {
   position: relative;
 }
@@ -55,6 +34,27 @@
 
   @include vp-374() {
     padding: 0 0 80px;
+  }
+}
+
+.about__wrapper p {
+  padding-bottom: 30px;
+
+  :last-child {
+    padding-bottom: 45px;
+  }
+
+  @include vp-767() {
+    padding-bottom: 20px;
+  }
+
+  @include vp-374() {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  &.is-active {
+    display: none;
   }
 }
 

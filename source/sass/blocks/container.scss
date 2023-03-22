@@ -1,9 +1,8 @@
 .container {
   width: 100%;
-  max-width: $vp-1024;
+  max-width: $vp-1280 - $gap-md - $gap-md;
   margin: 0 auto;
-  padding-left: $gap-l;
-  padding-right: $gap-l;
+  padding: 0;
 
   @include vp-1439 {
     padding-left: $gap-md;
