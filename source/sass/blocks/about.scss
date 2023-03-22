@@ -27,6 +27,10 @@
   @include vp-374() {
     display: none;
   }
+
+  @include retina {
+    background: url("../img/background-year@2x.webp"), $color-deep-sky-blue;
+  }
 }
 
 .about__wrapper {

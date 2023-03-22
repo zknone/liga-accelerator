@@ -56,10 +56,14 @@
     padding: 30px;
   }
 
-  background:
-    url("../img/services-background.webp") no-repeat,
+  background: url("../img/services-background.webp") no-repeat,
     $color-default-blue;
   background-size: 1500px 817px;
+
+  @include retina {
+    background: url("../img/services-background@2x.webp") no-repeat,
+      $color-default-blue;
+  }
 
   &--first {
     background-position-x: -220px;

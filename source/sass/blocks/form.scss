@@ -21,6 +21,11 @@
     padding-top: 50px;
     padding-bottom: 90px;
   }
+
+  @include retina {
+    background: url("../img/paper-plane@2x.webp") no-repeat,
+    url("../img/form-background-desktop@2x.webp") no-repeat, $color-deep-sky-blue;
+  }
 }
 
 .form h2 {
