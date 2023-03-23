@@ -3,7 +3,7 @@
   background: url("../img/paper-plane.webp") no-repeat,
     url("../img/form-background-desktop.webp") no-repeat, $color-deep-sky-blue;
   background-size: 510px 285px, cover;
-  background-position: calc(40% - 300px) calc(40%), center;
+  background-position: calc(40% - 230px) 45%, center;
   z-index: 1;
   padding: 170px 0 230px 0;
 
@@ -25,7 +25,7 @@
       url("../img/form-background-desktop@2x.webp") no-repeat,
       $color-deep-sky-blue;
       background-size: 510px 285px, cover;
-      background-position: calc(40% - 230px) calc(42%), center;
+      background-position: calc(40% - 230px) 45%, center;
   }
 
   @include retina-vp-1023 {

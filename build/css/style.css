@@ -1953,7 +1953,7 @@ body.has-open-modal {
 }
 
 .about__wrapper p {
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .about__wrapper p :last-child {
@@ -1981,7 +1981,7 @@ body.has-open-modal {
   width: -moz-fit-content;
   width: fit-content;
   min-width: 180px;
-  margin-top: 9px;
+  margin-top: 19px;
 }
 
 .services {
@@ -2100,7 +2100,7 @@ body.has-open-modal {
   position: relative;
   background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat, #00b2ff;
   background-size: 510px 285px, cover;
-  background-position: calc(40% - 300px) 40%, center;
+  background-position: calc(40% - 230px) 45%, center;
   z-index: 1;
   padding: 170px 0 230px 0;
 }
@@ -2325,7 +2325,7 @@ body.has-open-modal {
   .form {
     background: url("../img/paper-plane@2x.webp") no-repeat, url("../img/form-background-desktop@2x.webp") no-repeat, #00b2ff;
     background-size: 510px 285px, cover;
-    background-position: calc(40% - 230px) 42%, center;
+    background-position: calc(40% - 230px) 45%, center;
   }
 }
 
