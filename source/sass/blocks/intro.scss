@@ -10,12 +10,12 @@
     url("../img/background.webp") no-repeat center, $color-default-blue;
   background-size: cover;
 
-  @include vp-767() {
-    padding: 80px 0 190px;
+  @include vp-1023() {
+    padding: 92px 0 170px;
   }
 
-  @include vp-1023() {
-    padding: 80px 0 205px;
+  @include vp-767() {
+    padding: 80px 0 190px;
   }
 
   @include retina {
@@ -25,7 +25,7 @@
         rgba(25, 32, 36, 0) 100%
       ),
       url("../img/background@2x.webp") no-repeat center, $color-default-blue;
-      background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -40,6 +40,12 @@
 
   @include vp-1023() {
     margin-bottom: 20px;
+    margin: 0 0 5px 0;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.07em;
   }
 }
 
@@ -51,7 +57,7 @@
   color: $color-default-white;
 
   @include vp-1023() {
-    margin-bottom: 50px;
+    margin: 0 0 55px 0;
   }
 
   @include vp-767() {
@@ -67,6 +73,6 @@
     margin-left: 0;
   }
   @include vp-1023() {
-    margin-left: 45px;
+    margin: 0 0 33px 40px;
   }
 }
