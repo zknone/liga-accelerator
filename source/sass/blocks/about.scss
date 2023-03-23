@@ -8,8 +8,8 @@
 
 .about__year {
   position: absolute;
-  top: 50px;
-  left: -60px;
+  top: 58px;
+  left: -63px;
   margin: 0;
   padding: 0;
   transform: rotate(-90deg);
@@ -40,7 +40,7 @@
 }
 
 .about__wrapper {
-  padding: 0 0 120px 200px;
+  padding: 0 0 120px 250px;
 
   @include vp-767() {
     padding: 0 0 80px;
@@ -49,6 +49,8 @@
 
 .about__wrapper p {
   padding-bottom: 30px;
+
+
 
   :last-child {
     padding-bottom: 45px;
@@ -62,8 +64,6 @@
   @include vp-1023() {
     padding-bottom: 20px;
   }
-
-
 
   &.is-active {
     display: none;
@@ -90,4 +90,5 @@
 .about__button {
   width: fit-content;
   min-width: 180px;
+  margin-top: 9px;
 }

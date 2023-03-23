@@ -5,7 +5,7 @@
   background-size: 510px 285px, cover;
   background-position: calc(40% - 300px) calc(40%), center;
   z-index: 1;
-  padding: 170px 0 250px 0;
+  padding: 170px 0 230px 0;
 
   @include vp-1023() {
     background: $color-deep-sky-blue;
@@ -25,7 +25,7 @@
       url("../img/form-background-desktop@2x.webp") no-repeat,
       $color-deep-sky-blue;
       background-size: 510px 285px, cover;
-      background-position: calc(40% - 300px) calc(40%), center;
+      background-position: calc(40% - 230px) calc(42%), center;
   }
 
   @include retina-vp-1023 {
@@ -34,7 +34,7 @@
 }
 
 .form h2 {
-  margin: 0 0 0 auto;
+  margin: 0 10px 0 auto;
   padding-bottom: 15px;
   max-width: 580px;
 
@@ -61,7 +61,7 @@
 
 .form p {
   padding-bottom: 35px;
-  margin: 0 0 0 auto;
+  margin: 0 10px 0 auto;
   max-width: 580px;
 
   color: $color-default-white;
@@ -79,7 +79,7 @@
 
 .form__form {
   max-width: 580px;
-  margin: 0 0 0 auto;
+  margin: 0 10px 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
@@ -123,6 +123,8 @@
 
     grid-area: checkbox;
     max-width: 275px;
+
+    margin: 25px 0 20px ;
   }
 }
 
@@ -190,6 +192,7 @@
   height: fit-content;
   max-width: 275px;
   width: calc(100% - 10px);
+  margin-top: 10px;
 
   @include vp-1023() {
     max-width: none;
@@ -201,3 +204,4 @@
     width: 100%;
   }
 }
+

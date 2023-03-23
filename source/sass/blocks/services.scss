@@ -42,7 +42,7 @@
 .services__item {
   position: relative;
   padding: 50px 40px;
-  width: 28%;
+  width: 29%;
   min-height: 650px;
 
   @include vp-1023() {
@@ -128,6 +128,7 @@
 .services h3 {
   margin: 0;
   padding: 0;
+  max-width: 160px;
 
   font-family: $ff-roboto;
   color: $color-default-white;
