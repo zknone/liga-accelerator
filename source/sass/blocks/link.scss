@@ -49,7 +49,7 @@
     transition: background-position 500ms ease;
     text-decoration: none;
 
-    @include vp-374() {
+    @include vp-767() {
       font-size: 14px;
       line-height: 18px;
     }

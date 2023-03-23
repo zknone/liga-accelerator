@@ -34,7 +34,7 @@
   list-style-type: none;
   display: flex;
 
-  @include vp-767() {
+  @include vp-1023() {
     flex-direction: column;
   }
 }
@@ -45,13 +45,13 @@
   width: 28%;
   min-height: 650px;
 
-  @include vp-767() {
+  @include vp-1023() {
     padding: 40px 45px;
     width: 100%;
     min-height: 250px;
   }
 
-  @include vp-374() {
+  @include vp-767() {
     width: 100%;
     padding: 30px;
   }
@@ -68,28 +68,30 @@
     &--first {
       background-position-x: -220px;
       background-position-y: -163px;
-
-      @include vp-767() {
-        background-position-y: -500px;
-      }
     }
 
     &--second {
       background-position-x: -560px;
       background-position-y: -163px;
-
-      @include vp-767() {
-        background-position-y: -310px;
-      }
     }
 
     &--third {
       background-position-x: -930px;
       background-position-y: -163px;
+    }
 
-      @include vp-767() {
+    @include retina-vp-1023() {
+      &--third {
         background-position-x: -160px;
         background-position-y: -400px;
+      }
+
+      &--second {
+        background-position-y: -310px;
+      }
+
+      &--first {
+        background-position-y: -500px;
       }
     }
   }
@@ -98,7 +100,7 @@
     background-position-x: -220px;
     background-position-y: -163px;
 
-    @include vp-767() {
+    @include vp-1023() {
       background-position-y: -500px;
     }
   }
@@ -107,7 +109,7 @@
     background-position-x: -560px;
     background-position-y: -163px;
 
-    @include vp-767() {
+    @include vp-1023() {
       background-position-y: -310px;
     }
   }
@@ -116,7 +118,7 @@
     background-position-x: -930px;
     background-position-y: -163px;
 
-    @include vp-767() {
+    @include vp-1023() {
       background-position-x: -160px;
       background-position-y: -400px;
     }
@@ -136,12 +138,12 @@
   text-transform: none;
   color: $color-default-white;
 
-  @include vp-767 {
+  @include vp-1023 {
     font-size: 20px;
     line-height: 30px;
   }
 
-  @include vp-374() {
+  @include vp-767() {
     font-size: 18px;
     line-height: 30px;
   }
