@@ -9,7 +9,7 @@
   max-width: $vp-1024;
   margin: 0 auto;
 
-  @include vp-767() {
+  @include vp-1023() {
     flex-direction: column;
   }
 }
@@ -18,7 +18,7 @@
   width: 33.33%;
   padding-top: 50px;
 
-  @include vp-767() {
+  @include vp-1023() {
     width: 100%;
     padding-bottom: 40px;
     padding-top: 35px;
@@ -29,12 +29,12 @@
   width: 66.67%;
   display: flex;
 
-  @include vp-767() {
+  @include vp-1023() {
     flex-direction: row;
     width: 100%;
   }
 
-  @include vp-374() {
+  @include vp-767() {
     flex-direction: column;
     width: 100%;
   }
@@ -43,7 +43,7 @@
 .footer__navigation-wrapper {
   flex-basis: 50%;
 
-  @include vp-374() {
+  @include vp-767() {
     flex-basis: 100%;
   }
 }
@@ -51,7 +51,7 @@
 .footer__address-wrapper {
   flex-basis: 50%;
 
-  @include vp-374() {
+  @include vp-767() {
     flex-basis: 100%;
   }
 }

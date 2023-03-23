@@ -25,6 +25,7 @@
         rgba(25, 32, 36, 0) 100%
       ),
       url("../img/background@2x.webp") no-repeat center, $color-default-blue;
+      background-size: cover;
   }
 }
 

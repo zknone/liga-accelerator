@@ -7,7 +7,7 @@
 
   padding: 55px $gap-l 55px 30px;
 
-  @include vp-374() {
+  @include vp-767() {
     padding: 20px $gap-sm 5px $gap-sm;
     border-bottom: 1px solid $color-semi-transperent;
   }
@@ -22,7 +22,7 @@
   &.is-deactivate {
     display: block;
 
-    @include vp-374() {
+    @include vp-767() {
       display: none;
     }
   }
@@ -34,7 +34,7 @@
   color: $color-semi-transperent;
   margin-bottom: 10px;
 
-  @include vp-374() {
+  @include vp-767() {
     font-size: 14px;
     line-height: 18px;
 
@@ -47,7 +47,7 @@
 .footer-address__header {
   margin-bottom: 20px;
 
-  @include vp-374() {
+  @include vp-767() {
     margin-bottom: 0;
   }
 }
@@ -55,7 +55,7 @@
 .footer-address__accordeon-button {
   display: none;
 
-  @include vp-374() {
+  @include vp-767() {
     top: -15px;
     left: calc(100% - 29px);
     display: block;

@@ -1,21 +1,20 @@
 @mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    @content;
-  }
-}
-
-@mixin retina-vp-374 {
-  @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx),
-    (max-width: ($vp-375 - 1px)) {
+  @media (min-resolution: $retina-dpi) and (max-width: 999999px),
+    (min-resolution: $retina-dppx) and (max-width: 999999px) {
     @content;
   }
 }
 
 @mixin retina-vp-767 {
-  @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx),
-    (max-width: ($vp-768 - 1px)) {
+  @media (min-resolution: $retina-dpi) and (max-width: ($vp-768 - 1px)),
+    (min-resolution: $retina-dppx) and (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin retina-vp-1023 {
+  @media (min-resolution: $retina-dpi) and (max-width: ($vp-1024 - 1px)),
+    (min-resolution: $retina-dppx) and (max-width: ($vp-1024 - 1px)) {
     @content;
   }
 }
