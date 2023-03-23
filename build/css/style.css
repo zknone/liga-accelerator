@@ -911,6 +911,12 @@ button,
   margin-bottom: 20px;
 }
 
+body.is-active {
+  overflow: hidden;
+  position: fixed;
+  height: 600px;
+}
+
 .custom-input,
 .custom-textarea {
   position: relative;
@@ -1543,7 +1549,7 @@ button,
 .intro {
   margin-top: -15px;
   position: relative;
-  padding: 185px 0 280px;
+  padding: 300px 0 280px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center, #214e71;
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
