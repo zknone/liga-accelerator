@@ -1,6 +1,6 @@
 .btn {
   display: block;
-  padding: 10px 20px;
+  padding: 12px 20px;
 
   color: $color-default-white;
   font-family: $ff-roboto;
@@ -37,9 +37,10 @@
   }
 
   &--intro {
-    padding: 15px 25px;
+    padding: 17px 30px;
     font-size: 18px;
     line-height: 21px;
+    letter-spacing: 0.05em;
   }
 
   &--form {

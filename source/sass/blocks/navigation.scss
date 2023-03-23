@@ -20,32 +20,25 @@
 .navigation__container {
   display: flex;
   justify-content: space-between;
+
 }
 
 .navigation__list {
   display: flex;
-  justify-content: space-between;
+  width: 840px;
+  column-gap: 135px;
   align-items: center;
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  column-gap: 30px;
-
-  @include vp-1023() {
-    column-gap: 20px;
-  }
-}
-
-.navigation__item:has(.navigation__link) {
-  min-width: 230px;
-
-  @include vp-1023() {
-    min-width: fit-content;
-  }
+  margin: 0;
 }
 
 .navigation__logo {
   padding: 20px 0 25px;
+}
+
+.navigation__item {
+  margin: 0 0 10px 0;
 }
 
 .navigation__link {
@@ -59,6 +52,7 @@
 }
 
 .navigation__button {
+  margin-left: 35px;
   @include vp-1023() {
     display: none;
   }

@@ -204,8 +204,9 @@
   margin-bottom: 20px;
 }
 
-body.is-active {
+body.has-open-modal {
   overflow: hidden;
-  position: fixed;
-  height: 100vh;
+  height: 98vh;
+  margin-left: -10px;
+  background-color: $color-default-black;
 }

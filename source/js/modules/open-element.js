@@ -23,6 +23,8 @@ const closeButton = document.querySelector("[data-close-button]");
 
 const onModalButtonClick = () => {
   openElement(modalFrame, event);
+  const wholeBody = document.querySelector("body")
+  wholeBody.classList.toggle("has-open-modal");
 };
 
 const addressList = document.querySelector("[data-footer-address-list]");
