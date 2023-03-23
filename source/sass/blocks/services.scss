@@ -63,6 +63,35 @@
   @include retina {
     background: url("../img/services-background@2x.webp") no-repeat,
       $color-default-blue;
+    background-size: 1500px 817px;
+
+    &--first {
+      background-position-x: -220px;
+      background-position-y: -163px;
+
+      @include vp-767() {
+        background-position-y: -500px;
+      }
+    }
+
+    &--second {
+      background-position-x: -560px;
+      background-position-y: -163px;
+
+      @include vp-767() {
+        background-position-y: -310px;
+      }
+    }
+
+    &--third {
+      background-position-x: -930px;
+      background-position-y: -163px;
+
+      @include vp-767() {
+        background-position-x: -160px;
+        background-position-y: -400px;
+      }
+    }
   }
 
   &--first {

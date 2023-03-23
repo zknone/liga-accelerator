@@ -23,8 +23,29 @@
   }
 
   @include retina {
+    position: relative;
     background: url("../img/paper-plane@2x.webp") no-repeat,
-    url("../img/form-background-desktop@2x.webp") no-repeat, $color-deep-sky-blue;
+      url("../img/form-background-desktop@2x.webp") no-repeat,
+      $color-deep-sky-blue;
+    background-size: 510px 285px, cover;
+    background-position: calc(40% - 300px) calc(40%), center;
+    z-index: 1;
+    padding-top: 170px;
+    padding-left: 45%;
+    padding-bottom: 250px;
+  }
+
+  @include retina-vp-767 {
+    background: $color-deep-sky-blue;
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  @include retina-vp-374 {
+    padding-left: 0;
+    padding-top: 50px;
+    padding-bottom: 90px;
   }
 }
 

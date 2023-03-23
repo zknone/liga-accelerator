@@ -30,6 +30,9 @@
 
   @include retina {
     background: url("../img/background-year@2x.webp"), $color-deep-sky-blue;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $color-default-white;
   }
 }
 
