@@ -58,8 +58,6 @@
 .about__wrapper p {
   padding-bottom: 25px;
 
-
-
   :last-child {
     padding-bottom: 45px;
   }
@@ -75,6 +73,14 @@
 
   &.is-active {
     display: none;
+  }
+}
+
+.about__wrapper span {
+  @include vp-767() {
+    &.is-active {
+      display: none;
+    }
   }
 }
 

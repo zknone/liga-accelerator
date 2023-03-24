@@ -41,6 +41,22 @@
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.05em;
+    font-weight: 700;
+
+    .intro__mobile-description {
+      display: none;
+    }
+
+    @include vp-767() {
+      font-size: 14px;
+      padding: 8px 37px;
+      .intro__description {
+        display: none;
+      }
+      .intro__mobile-description {
+        display: block;
+      }
+    }
   }
 
   &--form {
