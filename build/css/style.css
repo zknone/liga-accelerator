@@ -1490,7 +1490,7 @@ a .navigation__logo {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  max-width: 1024px;
+  max-width: 1230px;
   margin: 0 auto;
   -webkit-column-gap: 165px;
   -moz-column-gap: 165px;
@@ -2120,7 +2120,7 @@ a .navigation__logo {
 .form h2 {
   margin: 0 10px 0 auto;
   padding-bottom: 15px;
-  max-width: 770px;
+  max-width: 580px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -2133,12 +2133,12 @@ a .navigation__logo {
 .form p {
   padding-bottom: 35px;
   margin: 0 10px 0 auto;
-  max-width: 770px;
+  max-width: 580px;
   color: rgb(242, 245, 246);
 }
 
 .form__form {
-  max-width: 770px;
+  max-width: 580px;
   margin: 0 10px 0 auto;
   display: -ms-grid;
   display: grid;
@@ -2426,6 +2426,7 @@ a .navigation__logo {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-width: 1024px;
   }
 
   .footer__logo-wrapper {
@@ -2611,6 +2612,7 @@ a .navigation__logo {
   }
 
   .form h2 {
+    max-width: 770px;
     font-size: 36px;
     line-height: 40px;
     padding-bottom: 15px;
@@ -2618,11 +2620,13 @@ a .navigation__logo {
   }
 
   .form p {
+    max-width: 770px;
     padding-bottom: 25px;
     margin: 0;
   }
 
   .form__form {
+    max-width: 770px;
     margin: 0;
   }
 
