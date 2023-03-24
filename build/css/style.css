@@ -2427,6 +2427,7 @@ a .navigation__logo {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 1024px;
+    padding: 0 30px;
   }
 
   .footer__logo-wrapper {
@@ -2674,6 +2675,10 @@ a .navigation__logo {
 
   .navigation__item {
     margin: 0 10px 0 0;
+  }
+
+  .footer__container {
+    padding: 0;
   }
 
   .footer__logo-wrapper {
