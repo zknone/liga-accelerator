@@ -10,7 +10,9 @@ import {
   onFooterAddressClick,
   linksButton,
   onFooterLinksClick,
-  addressButton
+  addressButton,
+  linksHeader,
+  addressHeader,
 } from "./modules/open-element";
 
 // ---------------------------------
@@ -27,8 +29,9 @@ window.addEventListener("DOMContentLoaded", () => {
   closeButton.addEventListener("click", onModalButtonClick);
   moreAboutButton.addEventListener("click", onAboutButtonClick);
   linksButton.addEventListener("click", onFooterLinksClick);
+  linksHeader.addEventListener("click", onFooterLinksClick);
   addressButton.addEventListener("click", onFooterAddressClick);
-
+  addressHeader.addEventListener("click", onFooterAddressClick);
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener("load", () => {

@@ -28,18 +28,18 @@ const onModalButtonClick = () => {
 };
 
 const addressList = document.querySelector("[data-footer-address-list]");
+const addressHeader = document.querySelector("[data-footer-address-header]");
 const addressButton = document.querySelector("[data-footer-address-button]");
 const addressSign = document.querySelector(["[data-address-sign]"]);
-console.log(addressSign);
 
 const onFooterAddressClick = () => {
   openAccordeonElement(addressList, addressSign);
 };
 
 const linksButton = document.querySelector("[data-footer-navigation-button]");
+const linksHeader = document.querySelector("[data-footer-navigation-header]");
 const linksList = document.querySelector("[data-footer-navigation-list]");
 const linksSign = document.querySelector("[data-navigation-sign]");
-console.log(linksSign);
 
 const onFooterLinksClick = () => {
   openAccordeonElement(linksList, linksSign);
@@ -48,6 +48,8 @@ const onFooterLinksClick = () => {
 export {
   linksButton,
   addressButton,
+  linksHeader,
+  addressHeader,
   onFooterAddressClick,
   onFooterLinksClick,
   openElement,
