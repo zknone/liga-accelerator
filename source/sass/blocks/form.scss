@@ -11,7 +11,7 @@
     background: $color-deep-sky-blue;
     padding-left: 0;
     padding-top: 50px;
-    padding-bottom: 125px;
+    padding-bottom: 110px;
   }
 
   @include vp-767() {
@@ -36,7 +36,7 @@
 .form h2 {
   margin: 0 10px 0 auto;
   padding-bottom: 15px;
-  max-width: 580px;
+  max-width: 770px;
 
   font-style: normal;
   font-weight: 400;
@@ -48,10 +48,10 @@
   text-transform: none;
 
   @include vp-1023() {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 40px;
     padding-bottom: 15px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   @include vp-767() {
@@ -62,12 +62,12 @@
 .form p {
   padding-bottom: 35px;
   margin: 0 10px 0 auto;
-  max-width: 580px;
+  max-width: 770px;
 
   color: $color-default-white;
   @include vp-1023() {
     padding-bottom: 25px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   @include vp-767() {
@@ -78,7 +78,7 @@
 }
 
 .form__form {
-  max-width: 580px;
+  max-width: 770px;
   margin: 0 10px 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -95,7 +95,7 @@
   }
 
   @include vp-1023() {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 
@@ -113,7 +113,7 @@
   &[data-form="question"] {
     grid-area: text-area;
     min-height: 155px;
-    max-width: 580px;
+    max-width: 770px;
   }
 
   &[data-form="checkbox"] {
@@ -122,9 +122,14 @@
     line-height: 16px;
 
     grid-area: checkbox;
-    max-width: 275px;
+    max-width: 385px;
 
     margin: 25px 0 20px ;
+
+    @include vp-1023() {
+      margin: 20px 0 20px ;
+      padding-left: 25px;
+    }
   }
 }
 
@@ -190,12 +195,12 @@
 .form__form button {
   grid-area: button;
   height: fit-content;
-  max-width: 275px;
+  max-width: 385px;
   width: calc(100% - 10px);
   margin-top: 10px;
 
   @include vp-1023() {
-    max-width: none;
+    max-width: 270px;
     width: auto;
   }
 

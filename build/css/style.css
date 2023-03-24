@@ -1494,6 +1494,7 @@ a .navigation__logo {
 
 .footer__logo-wrapper {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer__sub-container {
@@ -1503,6 +1504,14 @@ a .navigation__logo {
   -webkit-column-gap: 120px;
   -moz-column-gap: 120px;
   column-gap: 120px;
+}
+
+.footer__navigation-wrapper {
+  padding: 57px 0;
+}
+
+.footer__address-wrapper {
+  padding: 57px 0;
 }
 
 .header {
@@ -1590,7 +1599,6 @@ a .navigation__logo {
   -ms-flex-align: center;
   align-items: center;
   border: none;
-  padding: 50px 0;
 }
 
 .footer-socials__logo {
@@ -1653,7 +1661,6 @@ a .navigation__logo {
   flex-direction: column;
   border: none;
   width: 400px;
-  padding: 57px 0;
 }
 
 .footer-navigation__list {
@@ -1725,7 +1732,6 @@ a .navigation__logo {
   -ms-flex-direction: column;
   flex-direction: column;
   border: none;
-  padding: 57px 0;
 }
 
 .footer-address__list {
@@ -2111,7 +2117,7 @@ a .navigation__logo {
 .form h2 {
   margin: 0 10px 0 auto;
   padding-bottom: 15px;
-  max-width: 580px;
+  max-width: 770px;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -2124,12 +2130,12 @@ a .navigation__logo {
 .form p {
   padding-bottom: 35px;
   margin: 0 10px 0 auto;
-  max-width: 580px;
+  max-width: 770px;
   color: rgb(242, 245, 246);
 }
 
 .form__form {
-  max-width: 580px;
+  max-width: 770px;
   margin: 0 10px 0 auto;
   display: -ms-grid;
   display: grid;
@@ -2165,7 +2171,7 @@ a .navigation__logo {
   -ms-grid-column-span: 3;
   grid-area: text-area;
   min-height: 155px;
-  max-width: 580px;
+  max-width: 770px;
 }
 
 .form__form label[data-form=checkbox] {
@@ -2175,7 +2181,7 @@ a .navigation__logo {
   font-size: 14px;
   line-height: 16px;
   grid-area: checkbox;
-  max-width: 275px;
+  max-width: 385px;
   margin: 25px 0 20px;
 }
 
@@ -2237,7 +2243,7 @@ a .navigation__logo {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  max-width: 275px;
+  max-width: 385px;
   width: calc(100% - 10px);
   margin-top: 10px;
 }
@@ -2373,6 +2379,10 @@ a .navigation__logo {
     width: 100%;
   }
 
+  .custom-toggle--checkbox .custom-toggle__icon {
+    left: 0;
+  }
+
   .navigation {
     position: relative;
   }
@@ -2417,8 +2427,7 @@ a .navigation__logo {
 
   .footer__logo-wrapper {
     width: 100%;
-    padding-bottom: 40px;
-    padding-top: 35px;
+    padding: 50px 0 38px;
   }
 
   .footer__sub-container {
@@ -2429,14 +2438,26 @@ a .navigation__logo {
     width: 100%;
   }
 
+  .footer__navigation-wrapper {
+    padding: 0;
+  }
+
+  .footer__address-wrapper {
+    padding: 0;
+  }
+
   .header {
     font-size: 36px;
     line-height: 42px;
   }
 
   .header--h2 {
-    font-size: 28px;
-    line-height: 40px;
+    line-height: 50px;
+  }
+
+  .header--footer {
+    font-size: 15px;
+    line-height: 16px;
   }
 
   .intro {
@@ -2468,15 +2489,24 @@ a .navigation__logo {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 55px 30px;
   }
 
   .footer-socials__logo {
     margin-bottom: 0;
   }
 
+  .footer-socials__social-list {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0;
+    -webkit-column-gap: 13px;
+    -moz-column-gap: 13px;
+    column-gap: 13px;
+  }
+
   .footer-navigation {
-    padding: 55px 30px 55px 30px;
+    width: 250px;
   }
 
   .footer-navigation__list {
@@ -2488,6 +2518,14 @@ a .navigation__logo {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 15px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+    max-width: 230px;
+  }
+
+  .footer-navigation__list li {
+    margin-bottom: 9px;
   }
 
   .advantages ul {
@@ -2495,18 +2533,39 @@ a .navigation__logo {
     padding-bottom: 80px;
   }
 
+  .advantages li {
+    padding-bottom: 25px;
+  }
+
   .advantages h3 {
     font-size: 24px;
-    line-height: 34px;
+    line-height: 32px;
+    margin-top: -15px;
+    margin-bottom: -10px;
+  }
+
+  .about__year {
+    left: -16px;
+  }
+
+  .about__wrapper {
+    padding: 0 0 85px 176px;
   }
 
   .about__wrapper p {
     padding-bottom: 20px;
   }
 
-  .about h2 {
-    font-size: 28px;
-    line-height: 40px;
+  .about__button {
+    margin-top: 5px;
+  }
+
+  .services {
+    padding: 55px 0 75px;
+  }
+
+  .services h2 {
+    margin-bottom: 40px;
   }
 
   .services ul {
@@ -2517,7 +2576,7 @@ a .navigation__logo {
   }
 
   .services__item {
-    padding: 40px 45px;
+    padding: 35px 45px;
     width: 100%;
     min-height: 250px;
   }
@@ -2538,33 +2597,39 @@ a .navigation__logo {
   .services h3 {
     font-size: 20px;
     line-height: 30px;
+    max-width: 130px;
   }
 
   .form {
     background: #00b2ff;
     padding-left: 0;
     padding-top: 50px;
-    padding-bottom: 125px;
+    padding-bottom: 110px;
   }
 
   .form h2 {
-    font-size: 28px;
+    font-size: 36px;
     line-height: 40px;
     padding-bottom: 15px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .form p {
     padding-bottom: 25px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .form__form {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  .form__form label[data-form=checkbox] {
+    margin: 20px 0 20px;
+    padding-left: 25px;
   }
 
   .form__form button {
-    max-width: none;
+    max-width: 270px;
     width: auto;
   }
 
@@ -2662,9 +2727,9 @@ a .navigation__logo {
     flex-basis: 100%;
   }
 
-  .header--footer {
-    font-size: 15px;
-    line-height: 16px;
+  .header--h2 {
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .intro {
@@ -2686,7 +2751,6 @@ a .navigation__logo {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 55px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
@@ -2695,7 +2759,6 @@ a .navigation__logo {
   }
 
   .footer-navigation {
-    padding: 20px 25px 5px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
@@ -2723,7 +2786,6 @@ a .navigation__logo {
   }
 
   .footer-address {
-    padding: 20px 25px 5px 25px;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
@@ -2793,6 +2855,11 @@ a .navigation__logo {
   .about__wrapper p {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+    line-height: 40px;
   }
 
   .services__container {
@@ -2867,10 +2934,6 @@ a .navigation__logo {
   .services__container {
     padding-top: 50px;
     padding-bottom: 80px;
-  }
-
-  .services h2 {
-    margin-bottom: 40px;
   }
 }
 
