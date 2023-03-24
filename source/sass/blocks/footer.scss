@@ -23,6 +23,10 @@
     width: 100%;
     padding: 50px 0 38px;
   }
+
+  @include vp-767() {
+    padding: 35px 0 25px;
+  }
 }
 
 .footer__sub-container {
@@ -41,8 +45,6 @@
 }
 
 .footer__navigation-wrapper {
-  padding: 57px 0;
-
   @include vp-1023() {
     padding: 0;
   }
@@ -52,9 +54,6 @@
 }
 
 .footer__address-wrapper {
-
-  padding: 57px 0;
-
   @include vp-1023() {
     padding: 0;
   }

@@ -5,6 +5,10 @@
   @include vp-1023() {
     padding: 55px 0 75px;
   }
+
+  @include vp-767() {
+    padding: 0 0 10px;
+  }
 }
 
 .services__container {
@@ -12,13 +16,8 @@
   padding-bottom: 140px;
 
   @include vp-767() {
-    padding-top: 60px;
+    padding-top: 45px;
     padding-bottom: 75px;
-  }
-
-  @include vp-374() {
-    padding-top: 50px;
-    padding-bottom: 80px;
   }
 }
 
@@ -27,6 +26,24 @@
 
   @include vp-1023() {
     margin-bottom: 40px;
+  }
+
+  @include vp-767() {
+    max-width: 260px;
+    margin-bottom: 25px;
+  }
+}
+
+.services__desktop-header-variant {
+  @include vp-767() {
+    display: none;
+  }
+}
+
+.services__mobile-header-variant {
+  display: none;
+  @include vp-767() {
+    display: block;
   }
 }
 
@@ -178,6 +195,16 @@
   transition: background-position 275ms ease;
   text-decoration: none;
 
+  @include vp-767() {
+    width: 30px;
+    height: 30px;
+
+    padding: 20px;
+
+    top: calc(100% - 40px);
+    left: calc(100% - 40px);
+  }
+
   @include hover {
     color: $color-default-white;
     background-position: 0 100%;
@@ -204,4 +231,9 @@
   height: 15px;
   position: relative;
   transform: translateX(-50%) translateY(-50%);
+
+  @include vp-767() {
+    width: 7px;
+    height: 7px;
+  }
 }

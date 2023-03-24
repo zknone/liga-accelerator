@@ -1511,14 +1511,6 @@ a .navigation__logo {
   column-gap: 120px;
 }
 
-.footer__navigation-wrapper {
-  padding: 57px 0;
-}
-
-.footer__address-wrapper {
-  padding: 57px 0;
-}
-
 .header {
   font-style: bold;
   font-weight: 700;
@@ -1666,6 +1658,7 @@ a .navigation__logo {
   flex-direction: column;
   border: none;
   width: 400px;
+  padding: 57px 0;
 }
 
 .footer-navigation__list {
@@ -1737,6 +1730,7 @@ a .navigation__logo {
   -ms-flex-direction: column;
   flex-direction: column;
   border: none;
+  padding: 57px 0;
 }
 
 .footer-address__list {
@@ -2010,6 +2004,10 @@ a .navigation__logo {
 
 .services h2 {
   margin-bottom: 50px;
+}
+
+.services__mobile-header-variant {
+  display: none;
 }
 
 .services ul {
@@ -2674,6 +2672,10 @@ a .navigation__logo {
     margin: 0 10px 0 0;
   }
 
+  .footer__logo-wrapper {
+    padding: 35px 0 25px;
+  }
+
   .footer__sub-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2728,8 +2730,16 @@ a .navigation__logo {
     margin-bottom: 15px;
   }
 
+  .footer-socials__social-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .footer-navigation {
+    width: 100%;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 0 25px;
   }
 
   .footer-navigation__list.is-deactivate {
@@ -2739,13 +2749,15 @@ a .navigation__logo {
 
   .footer-navigation__header {
     margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
   }
 
   .footer-navigation__accordeon-button {
     margin: 0;
     padding: 0;
-    top: -15px;
-    left: calc(100% - 25px);
+    top: -25px;
+    left: calc(100% - 15px);
     display: block;
     position: relative;
     font-size: 0;
@@ -2757,6 +2769,7 @@ a .navigation__logo {
 
   .footer-address {
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 0 25px;
   }
 
   .footer-address__list.is-deactivate {
@@ -2773,12 +2786,13 @@ a .navigation__logo {
   }
 
   .footer-address__header {
-    margin-bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 8px;
   }
 
   .footer-address__accordeon-button {
-    top: -15px;
-    left: calc(100% - 29px);
+    top: -25px;
+    left: calc(100% - 25px);
     display: block;
     position: relative;
     font-size: 0;
@@ -2846,9 +2860,31 @@ a .navigation__logo {
     line-height: 40px;
   }
 
+  .about__button {
+    margin-top: -15px;
+    min-width: 160px;
+  }
+
+  .services {
+    padding: 0 0 10px;
+  }
+
   .services__container {
-    padding-top: 60px;
+    padding-top: 45px;
     padding-bottom: 75px;
+  }
+
+  .services h2 {
+    max-width: 260px;
+    margin-bottom: 25px;
+  }
+
+  .services__desktop-header-variant {
+    display: none;
+  }
+
+  .services__mobile-header-variant {
+    display: block;
   }
 
   .services__item {
@@ -2861,6 +2897,19 @@ a .navigation__logo {
     line-height: 30px;
   }
 
+  .services__item-link {
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    top: calc(100% - 40px);
+    left: calc(100% - 40px);
+  }
+
+  .services__item-link svg {
+    width: 7px;
+    height: 7px;
+  }
+
   .form {
     padding-left: 0;
     padding-top: 50px;
@@ -2868,7 +2917,9 @@ a .navigation__logo {
   }
 
   .form h2 {
-    padding-bottom: 20px;
+    padding-bottom: 0;
+    font-size: 30px;
+    line-height: 42px;
   }
 
   .form p {
@@ -2887,6 +2938,10 @@ a .navigation__logo {
     flex-direction: column;
   }
 
+  .form__form label[data-form=checkbox] {
+    margin: 0;
+  }
+
   .form__form input {
     font-size: 14px;
     line-height: 18px;
@@ -2895,11 +2950,13 @@ a .navigation__logo {
   .form__form textarea {
     font-size: 14px;
     line-height: 18px;
+    min-height: 185px;
   }
 
   .form__form button {
     max-width: none;
     width: 100%;
+    margin: 0;
   }
 
   .container {
@@ -2974,13 +3031,6 @@ a .navigation__logo {
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .about__year {
     display: none;
-  }
-}
-
-@media (max-width: 374px) {
-  .services__container {
-    padding-top: 50px;
-    padding-bottom: 80px;
   }
 }
 

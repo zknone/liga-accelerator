@@ -42,6 +42,10 @@
     padding: 0;
     column-gap: 13px;
   }
+
+  @include vp-767() {
+    justify-content: center;
+  }
 }
 
 .footer-socials__social-link {
