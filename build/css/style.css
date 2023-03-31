@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-bold.woff2") format("woff2");
 }
 
 *,
@@ -445,7 +445,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: rgb(242, 245, 246);
+  background-color: #F2F5F7;
 }
 
 p {
@@ -470,8 +470,8 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px rgb(242, 245, 246);
-  box-shadow: inset 0 0 0 1000px rgb(242, 245, 246);
+  -webkit-box-shadow: inset 0 0 0 1000px #F2F5F7;
+  box-shadow: inset 0 0 0 1000px #F2F5F7;
   -webkit-text-fill-color: #041827;
 }
 
@@ -644,7 +644,7 @@ button,
 .btn {
   display: block;
   padding: 12px 20px;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -663,18 +663,18 @@ button,
 
 .btn--black {
   background-color: #041827;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   border: none;
 }
 
 .btn--menu-black {
   background-color: #041827;
-  color: rgb(242, 245, 246);
-  border: 1px solid rgb(242, 245, 246);
+  color: #F2F5F7;
+  border: 1px solid #F2F5F7;
 }
 
 .btn--white {
-  background-color: rgb(242, 245, 246);
+  background-color: #F2F5F7;
   color: #00b2ff;
   border: #00b2ff 1px solid;
 }
@@ -1080,7 +1080,7 @@ body.has-open-modal {
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
-  border: 1.5px solid rgb(242, 245, 246);
+  border: 1.5px solid #F2F5F7;
 }
 
 .custom-toggle--checkbox .custom-toggle__icon::before {
@@ -1088,7 +1088,7 @@ body.has-open-modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -1466,7 +1466,7 @@ body.has-open-modal {
 
 a .navigation__logo {
   display: block;
-  padding: 20px 0 25px;
+  padding: 35px 0 40px;
 }
 
 .navigation__item {
@@ -1517,7 +1517,7 @@ a .navigation__logo {
   font-size: 64px;
   line-height: 75px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -1537,7 +1537,7 @@ a .navigation__logo {
 }
 
 .header--white {
-  color: rgb(242, 245, 246);
+  color: #ffffff;
 }
 
 .header--footer {
@@ -1555,7 +1555,7 @@ a .navigation__logo {
 .intro {
   margin-top: -15px;
   position: relative;
-  padding: 295px 0 245px;
+  padding: 310px 0 245px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center, #214e71;
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
@@ -1564,7 +1564,7 @@ a .navigation__logo {
 
 .intro h2 {
   margin: 0 0 33px 125px;
-  max-width: 715px;
+  max-width: 730px;
   font-weight: 700;
   font-size: 80px;
   line-height: 93px;
@@ -1576,7 +1576,7 @@ a .navigation__logo {
   max-width: 700px;
   font-size: 22px;
   line-height: 34px;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .intro button {
@@ -1626,7 +1626,7 @@ a .navigation__logo {
 }
 
 .footer-socials__social-link .footer-socials__social-icon {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   -webkit-transition: color 500ms ease;
   -o-transition: color 500ms ease;
   transition: color 500ms ease;
@@ -1634,7 +1634,7 @@ a .navigation__logo {
 
 .footer-socials__social-link .footer-socials__social-icon.focus-visible:focus {
   color: #00b2ff;
-  outline: 2px solid rgb(242, 245, 246);
+  outline: 2px solid #F2F5F7;
 }
 
 .footer-socials__social-link .footer-socials__social-icon:active {
@@ -1684,6 +1684,8 @@ a .navigation__logo {
 
 .footer-navigation__header {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer-navigation__accordeon-button {
@@ -1753,6 +1755,8 @@ a .navigation__logo {
 
 .footer-address__header {
   margin-bottom: 20px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .footer-address__accordeon-button {
@@ -1798,9 +1802,9 @@ a .navigation__logo {
 .link--menu-link {
   color: #00b2ff;
   overflow: hidden;
-  background: -webkit-gradient(linear, right top, left top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, #00b2ff));
-  background: -o-linear-gradient(right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, #00b2ff 50%);
-  background: linear-gradient(to left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, #00b2ff 50%);
+  background: -webkit-gradient(linear, right top, left top, from(#F2F5F7), color-stop(50%, #F2F5F7), color-stop(50%, #00b2ff));
+  background: -o-linear-gradient(right, #F2F5F7, #F2F5F7 50%, #00b2ff 50%);
+  background: linear-gradient(to left, #F2F5F7, #F2F5F7 50%, #00b2ff 50%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1827,9 +1831,9 @@ a .navigation__logo {
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, rgba(255, 255, 255, 0.7)));
-  background: -o-linear-gradient(left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(255, 255, 255, 0.7) 50%);
-  background: linear-gradient(to right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(255, 255, 255, 0.7) 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#F2F5F7), color-stop(50%, #F2F5F7), color-stop(50%, rgba(255, 255, 255, 0.7)));
+  background: -o-linear-gradient(left, #F2F5F7, #F2F5F7 50%, rgba(255, 255, 255, 0.7) 50%);
+  background: linear-gradient(to right, #F2F5F7, #F2F5F7 50%, rgba(255, 255, 255, 0.7) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1842,12 +1846,12 @@ a .navigation__logo {
 }
 
 .link--footer-white.focus-visible:focus {
-  color: rgb(242, 245, 246);
-  outline: 2px solid rgb(242, 245, 246);
+  color: #F2F5F7;
+  outline: 2px solid #F2F5F7;
 }
 
 .link--footer-white:active {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .link--footer-white:disabled {
@@ -1891,15 +1895,15 @@ a .navigation__logo {
 }
 
 .advantages li.focus-visible:focus svg {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .advantages li.focus-visible:focus h3 {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .advantages li.focus-visible:focus p {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .advantages li p {
@@ -1909,8 +1913,8 @@ a .navigation__logo {
 }
 
 .advantages h3 {
-  font-style: bold;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 400;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 24px;
   line-height: 20px;
@@ -1953,7 +1957,7 @@ a .navigation__logo {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .about__wrapper {
@@ -2052,13 +2056,13 @@ a .navigation__logo {
   padding: 0;
   max-width: 160px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   text-transform: none;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .services__item-link {
@@ -2068,7 +2072,7 @@ a .navigation__logo {
   width: 60px;
   height: 60px;
   padding: 30px;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   border-radius: 0;
   border-bottom-left-radius: 3px;
   overflow: hidden;
@@ -2085,12 +2089,12 @@ a .navigation__logo {
 }
 
 .services__item-link.focus-visible:focus {
-  color: rgb(242, 245, 246);
-  outline: 2px solid rgb(242, 245, 246);
+  color: #F2F5F7;
+  outline: 2px solid #F2F5F7;
 }
 
 .services__item-link:active {
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .services__item-link:disabled {
@@ -2134,7 +2138,7 @@ a .navigation__logo {
   padding-bottom: 35px;
   margin: 0 10px 0 auto;
   max-width: 580px;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
 }
 
 .form__form {
@@ -2180,7 +2184,7 @@ a .navigation__logo {
 .form__form label[data-form=checkbox] {
   -ms-grid-row: 5;
   -ms-grid-column: 3;
-  color: rgb(242, 245, 246);
+  color: #F2F5F7;
   font-size: 14px;
   line-height: 16px;
   grid-area: checkbox;
@@ -3070,7 +3074,7 @@ a .navigation__logo {
   }
 
   .link--footer-white:hover:not(.focus-visible) {
-    color: rgb(242, 245, 246);
+    color: #F2F5F7;
     background-position: 0 100%;
   }
 
@@ -3079,19 +3083,19 @@ a .navigation__logo {
   }
 
   .advantages li:hover:not(.focus-visible) svg {
-    color: rgb(242, 245, 246);
+    color: #F2F5F7;
   }
 
   .advantages li:hover:not(.focus-visible) h3 {
-    color: rgb(242, 245, 246);
+    color: #F2F5F7;
   }
 
   .advantages li:hover:not(.focus-visible) p {
-    color: rgb(242, 245, 246);
+    color: #F2F5F7;
   }
 
   .services__item-link:hover:not(.focus-visible) {
-    color: rgb(242, 245, 246);
+    color: #F2F5F7;
     background-position: 0 100%;
   }
 }
