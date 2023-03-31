@@ -1,5 +1,4 @@
 .intro {
-  margin-top: -15px;
   position: relative;
   padding: 310px 0 245px;
   background: linear-gradient(
@@ -11,6 +10,7 @@
   background-size: cover;
 
   @include vp-1023() {
+    margin-top: -15px;
     padding: 92px 0 170px;
   }
 

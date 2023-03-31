@@ -7,7 +7,8 @@
 .footer__container {
   display: flex;
   flex-direction: row;
-  max-width: $vp-1280 - $gap-sm - $gap-sm;
+  max-width: $vp-1280;
+  padding: 0 $gap-md;;
   margin: 0 auto;
   column-gap: 165px;
 

@@ -1506,7 +1506,8 @@ a .navigation__logo {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  max-width: 1230px;
+  max-width: 1280px;
+  padding: 0 30px;
   margin: 0 auto;
   -webkit-column-gap: 165px;
   -moz-column-gap: 165px;
@@ -1569,7 +1570,6 @@ a .navigation__logo {
 }
 
 .intro {
-  margin-top: -15px;
   position: relative;
   padding: 310px 0 245px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center, #214e71;
@@ -1968,7 +1968,7 @@ a .navigation__logo {
   font-style: bold;
   font-weight: 700;
   font-size: 156px;
-  line-height: 220px;
+  line-height: 210px;
   background: url("../img/background-year.webp"), #00b2ff;
   -webkit-background-clip: text;
   background-clip: text;
@@ -2280,10 +2280,9 @@ a .navigation__logo {
 }
 
 .container {
-  width: 100%;
-  max-width: 1220px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
 }
 
 /* @mixin hover-focus {
@@ -2501,6 +2500,7 @@ a .navigation__logo {
   }
 
   .intro {
+    margin-top: -15px;
     padding: 92px 0 170px;
   }
 
@@ -2584,7 +2584,7 @@ a .navigation__logo {
   }
 
   .about__year {
-    left: -16px;
+    left: -30px;
   }
 
   .about__wrapper {
