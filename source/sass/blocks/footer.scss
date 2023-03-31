@@ -13,7 +13,7 @@
   @include vp-1023() {
     flex-direction: column;
     max-width: $vp-1024;
-    padding: 0 $gap-md;
+    padding: 0 $gap-l;
   }
 
   @include vp-767() {

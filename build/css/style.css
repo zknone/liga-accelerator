@@ -2411,9 +2411,13 @@ a .navigation__logo {
     column-gap: 0;
   }
 
+  a .navigation__logo {
+    padding: 20px 0 30px;
+  }
+
   .navigation__item {
     margin: 0 30px 0 0;
-    padding: 10px 5px;
+    padding: 10px 5px 20px;
   }
 
   .navigation__item:last-child {
@@ -2439,7 +2443,7 @@ a .navigation__logo {
     -ms-flex-direction: column;
     flex-direction: column;
     max-width: 1024px;
-    padding: 0 30px;
+    padding: 0 50px;
   }
 
   .footer__logo-wrapper {
@@ -2482,8 +2486,7 @@ a .navigation__logo {
   }
 
   .intro h2 {
-    margin-bottom: 20px;
-    margin: 0 0 5px 0;
+    margin: 0;
     font-weight: 700;
     font-size: 64px;
     line-height: 75px;
@@ -2683,6 +2686,10 @@ a .navigation__logo {
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
     column-gap: 25px;
+  }
+
+  a .navigation__logo {
+    padding: 15px 0 20px;
   }
 
   .navigation__item {

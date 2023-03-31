@@ -39,8 +39,7 @@
   letter-spacing: 0.07em;
 
   @include vp-1023() {
-    margin-bottom: 20px;
-    margin: 0 0 5px 0;
+    margin: 0;
 
     font-weight: 700;
     font-size: 64px;
