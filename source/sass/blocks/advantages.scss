@@ -21,8 +21,9 @@
   @include vp-767() {
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 53px;
+    padding-bottom: 45px;
+    column-gap: 32px;
   }
 }
 
@@ -65,8 +66,12 @@
   }
 
   @include vp-767() {
-    padding: 25px 25px 20px;
-    min-height: 337px;
+    padding: 28px 25px 20px;
+    min-height: 335px;
+
+    &:last-child {
+      min-height: 325px;
+    }
   }
 }
 
@@ -102,6 +107,10 @@
   color: $color-deep-sky-blue;
 
   @include vp-767() {
-    padding-bottom: 15px;
+    padding: 0;
+    margin-bottom: 30px;
+    display: block;
+    width: 32px;
+    height: 32px;
   }
 }
