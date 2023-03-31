@@ -2194,7 +2194,7 @@ a .navigation__logo {
   -ms-grid-column-span: 3;
   grid-area: text-area;
   min-height: 155px;
-  max-width: 770px;
+  max-width: 100%;
 }
 
 .form__form label[data-form=checkbox] {
@@ -2644,7 +2644,7 @@ a .navigation__logo {
   }
 
   .form h2 {
-    max-width: 770px;
+    max-width: 100%;
     font-size: 36px;
     line-height: 40px;
     padding-bottom: 15px;
@@ -2652,13 +2652,13 @@ a .navigation__logo {
   }
 
   .form p {
-    max-width: 770px;
+    max-width: 100%;
     padding-bottom: 25px;
     margin: 0;
   }
 
   .form__form {
-    max-width: 770px;
+    max-width: 100%;
     margin: 0;
   }
 
