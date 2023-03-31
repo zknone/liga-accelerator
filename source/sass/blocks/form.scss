@@ -151,7 +151,7 @@
 
   font-size: 16px;
   line-height: 21px;
-  color: $color-semi-transperent;
+  color: $color-basic-white;
 
   @include vp-767() {
     font-size: 14px;
@@ -172,6 +172,10 @@
   &:active {
     background-color: rgba(4, 20, 39, 0.3);
   }
+
+  &::-webkit-input-placeholder {
+    color: $color-basic-white;
+  }
 }
 
 .form__form textarea {
@@ -179,7 +183,7 @@
   width: 100%;
   padding: 25px 15px;
   border: none;
-  color: $color-semi-transperent;
+  color: $color-basic-white;
   background-color: $background-form-transparent;
   transition: background-color 300ms ease;
 
@@ -187,6 +191,10 @@
     font-size: 14px;
     line-height: 18px;
     min-height: 185px;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-basic-white;
   }
 
   &:hover {

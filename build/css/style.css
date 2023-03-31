@@ -2195,7 +2195,7 @@ a .navigation__logo {
   border: none;
   font-size: 16px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
@@ -2214,16 +2214,24 @@ a .navigation__logo {
   background-color: rgba(4, 20, 39, 0.3);
 }
 
+.form__form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
 .form__form textarea {
   height: 100%;
   width: 100%;
   padding: 25px 15px;
   border: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
   background-color: rgba(4, 20, 39, 0.15);
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
+}
+
+.form__form textarea::-webkit-input-placeholder {
+  color: #ffffff;
 }
 
 .form__form textarea:hover {
