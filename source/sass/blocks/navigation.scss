@@ -23,7 +23,8 @@
 
 .navigation__list {
   display: flex;
-  width: 840px;
+  flex-wrap: wrap;
+  max-width: 840px;
   column-gap: 135px;
   align-items: center;
   list-style-type: none;
