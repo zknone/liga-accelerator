@@ -444,8 +444,21 @@ html {
 
 body {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
   background-color: #F2F5F7;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 p {
@@ -1478,6 +1491,9 @@ a .navigation__logo {
 }
 
 .footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   background-color: #041827;
   padding-bottom: 35px;
 }
