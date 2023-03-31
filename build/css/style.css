@@ -799,7 +799,7 @@ button,
 
 .modal__close-btn:focus {
   background-color: rgba(4, 20, 39, 0.25);
-  outline: 1px solid rgba(248, 253, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .modal__close-btn:active {
@@ -880,7 +880,7 @@ button,
 
 .modal__form input:focus {
   background-color: rgba(4, 20, 39, 0.25);
-  outline: 1px solid rgba(248, 253, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .modal__form input:active {
@@ -906,7 +906,7 @@ button,
 
 .modal__form textarea:focus {
   background-color: rgba(4, 20, 39, 0.25);
-  outline: 1px solid rgba(248, 253, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .modal__form textarea:active {
@@ -1747,7 +1747,7 @@ a .navigation__logo {
 .footer-address li {
   font-size: 16px;
   line-height: 21px;
-  color: rgba(248, 253, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
 
@@ -1825,11 +1825,11 @@ a .navigation__logo {
 .link--footer-white {
   font-size: 16px;
   line-height: 21px;
-  color: rgba(248, 253, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, right top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, rgba(248, 253, 255, 0.7)));
-  background: -o-linear-gradient(left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(248, 253, 255, 0.7) 50%);
-  background: linear-gradient(to right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(248, 253, 255, 0.7) 50%);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(242, 245, 246)), color-stop(50%, rgb(242, 245, 246)), color-stop(50%, rgba(255, 255, 255, 0.7)));
+  background: -o-linear-gradient(left, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(255, 255, 255, 0.7) 50%);
+  background: linear-gradient(to right, rgb(242, 245, 246), rgb(242, 245, 246) 50%, rgba(255, 255, 255, 0.7) 50%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2195,7 +2195,7 @@ a .navigation__logo {
   border: none;
   font-size: 16px;
   line-height: 21px;
-  color: rgba(248, 253, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
@@ -2207,7 +2207,7 @@ a .navigation__logo {
 
 .form__form input:focus {
   background-color: rgba(4, 20, 39, 0.25);
-  outline: 1px solid rgba(248, 253, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .form__form input:active {
@@ -2219,7 +2219,7 @@ a .navigation__logo {
   width: 100%;
   padding: 25px 15px;
   border: none;
-  color: rgba(248, 253, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
   background-color: rgba(4, 20, 39, 0.15);
   -webkit-transition: background-color 300ms ease;
   -o-transition: background-color 300ms ease;
@@ -2232,7 +2232,7 @@ a .navigation__logo {
 
 .form__form textarea:focus {
   background-color: rgba(4, 20, 39, 0.25);
-  outline: 1px solid rgba(248, 253, 255, 0.7);
+  outline: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .form__form textarea:active {
@@ -2732,7 +2732,7 @@ a .navigation__logo {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
 
   .footer-socials__logo {
@@ -2747,7 +2747,7 @@ a .navigation__logo {
 
   .footer-navigation {
     width: 100%;
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     padding: 0 25px;
   }
 
@@ -2777,7 +2777,7 @@ a .navigation__logo {
   }
 
   .footer-address {
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     padding: 0 25px;
   }
 
