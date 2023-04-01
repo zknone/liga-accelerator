@@ -132,46 +132,6 @@
       }
   }
 
-  // @include vp-767() {
-  //   &--first {
-  //     // background: url("../img/services-bg-mob-1.webp") no-repeat,
-  //     //   $color-default-blue;
-  //     //   background-size: cover;
-  //   }
-
-  //   &--second {
-  //     // background: url("../img/services-bg-mob-2.webp") no-repeat,
-  //     //   $color-default-blue;
-  //     //   background-size: cover;
-  //   }
-
-  //   &--third {
-  //     background: url("../img/services-bg-mob-3x.webp") no-repeat,
-  //       $color-default-blue;
-  //       background-size: cover;
-  //   }
-  // }
-
-  // @include vp-1023() {
-  //   &--first {
-  //     background: url("../img/services-bg-tab-1.webp") no-repeat,
-  //       $color-default-blue;
-  //       background-size: cover;
-  //   }
-
-  //   &--second {
-  //     background: url("../img/services-bg-tab-2.webp") no-repeat,
-  //       $color-default-blue;
-  //       background-size: cover;
-  //   }
-
-  //   &--third {
-  //     background: url("../img/services-bg-tab-3.webp") no-repeat,
-  //       $color-default-blue;
-  //       background-size: cover;
-  //   }
-  // }
-
   @include retina {
     &--first {
       background: url("../img/services-bg-1@2x.webp") no-repeat,

@@ -35,15 +35,19 @@
   padding: 0 10px;
   column-gap: 15px;
   width: 100%;
+  max-width: 200px;
   justify-content: flex-start;
+  flex-wrap: wrap;
 
   @include vp-1023() {
     justify-content: flex-end;
+    max-width: 400px;
     padding: 0;
     column-gap: 13px;
   }
 
   @include vp-767() {
+    max-width: 200px;
     justify-content: center;
   }
 }
