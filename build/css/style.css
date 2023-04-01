@@ -2457,6 +2457,7 @@ a .navigation__logo {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    max-width: 300px;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
