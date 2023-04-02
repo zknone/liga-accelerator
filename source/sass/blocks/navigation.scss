@@ -53,16 +53,20 @@
 
 a .navigation__logo {
   display: block;
-  padding: 35px 0 40px;
-  margin-right: 100px;
+  padding: 0;
+  margin: 35px 100px 40px;
 
   @include vp-1023() {
-    padding: 20px 0 30px;
-    margin: 0;
+    margin: 20px 0 30px;
   }
 
   @include vp-767() {
-    padding: 20px 0 20px;
+    margin: 20px 0 20px;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+    transition: opacity 500ms ease;
   }
 }
 

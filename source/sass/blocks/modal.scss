@@ -128,8 +128,6 @@
   }
 }
 
-
-
 .modal h2 {
   margin-bottom: 15px;
 }
@@ -160,7 +158,16 @@
   background-color: $background-form-transparent;
   border: none;
 
+  &::-webkit-input-placeholder {
+    color: $color-basic-white;
+  }
+
   transition: background-color 300ms ease;
+
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px rgb(10, 130, 181);
+    -webkit-text-fill-color: $color-default-white;
+  }
 
   &:hover {
     background-color: rgba(4, 20, 39, 0.25);
@@ -185,6 +192,10 @@
   color: $color-basic-white;
   background-color: $background-form-transparent;
   transition: background-color 300ms ease;
+
+  &::-webkit-input-placeholder {
+    color: $color-basic-white;
+  }
 
   &:hover {
     background-color: rgba(4, 20, 39, 0.25);

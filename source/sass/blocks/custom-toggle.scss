@@ -6,6 +6,16 @@
 
   display: flex;
   padding: 0 0 10px 36px;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.8;
+    transition: opacity 3ms ease-in;
+  }
+
+  @include focus {
+    outline: 1px solid $color-semi-transperent;
+  }
 
   @media screen and (max-width: 767px) {
     padding: 0 0 10px 0;
@@ -35,8 +45,6 @@
 
     padding-left: 52px;
 
-    cursor: pointer;
-
     span {
       margin-bottom: 0;
       margin-left: 0;
@@ -53,6 +61,8 @@
       height: 15px;
       transition: 0.3s ease;
       border: 1.5px solid $color-default-white;
+
+      cursor: pointer;
 
       @include vp-1023() {
         left: 0;
@@ -80,6 +90,7 @@
 
       border: 1px solid #2c39f2;
       border-radius: 50%;
+      cursor: pointer;
 
       transition: border 0.3s ease;
 
@@ -102,9 +113,15 @@
     }
   }
 
-  input:checked + .custom-toggle__icon {
+  input + .custom-toggle__icon {
     &::before {
       display: none;
+    }
+  }
+
+  input:checked + .custom-toggle__icon {
+    &::before {
+      display: block;
     }
   }
 

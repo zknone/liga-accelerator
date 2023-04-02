@@ -24,8 +24,8 @@
     background: url("../img/paper-plane@2x.webp") no-repeat,
       url("../img/form-background-desktop@2x.webp") no-repeat,
       $color-deep-sky-blue;
-      background-size: 510px 285px, cover;
-      background-position: calc(40% - 230px) 45%, center;
+    background-size: 510px 285px, cover;
+    background-position: calc(40% - 230px) 45%, center;
   }
 
   @include retina-vp-1023 {
@@ -126,14 +126,13 @@
     color: $color-default-white;
     font-size: 14px;
     line-height: 16px;
-
     grid-area: checkbox;
     max-width: 385px;
 
-    margin: 25px 0 20px ;
+    margin: 25px 0 20px;
 
     @include vp-1023() {
-      margin: 20px 0 20px ;
+      margin: 20px 0 20px;
       padding-left: 25px;
     }
 
@@ -152,6 +151,12 @@
   font-size: 16px;
   line-height: 21px;
   color: $color-basic-white;
+  &:-webkit-autofill {
+    box-shadow: inset 0 0 0 1000px rgb(10, 130, 181);
+    -webkit-text-fill-color: $color-default-white;
+    font-size: 16px;
+    line-height: 21px;
+  }
 
   @include vp-767() {
     font-size: 14px;
@@ -229,4 +234,3 @@
     margin: 0;
   }
 }
-
