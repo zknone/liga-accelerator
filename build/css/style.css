@@ -689,7 +689,7 @@ button,
   color: #F2F5F7;
   border: 1px solid #F2F5F7;
   line-height: 16px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 
 .btn--white {
@@ -1519,10 +1519,15 @@ button,
   margin: 0;
 }
 
+.navigation__logo {
+  width: 215px;
+  height: 55px;
+}
+
 a .navigation__logo {
   display: block;
   padding: 0;
-  margin: 35px 100px 40px;
+  margin: 35px 0 40px;
 }
 
 a .navigation__logo.focus-visible:focus {
@@ -1537,13 +1542,14 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .navigation__button {
-  margin-left: 35px;
+  margin-right: 60px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  margin-bottom: 15px;
 }
 
 .footer {
@@ -1750,12 +1756,16 @@ a .navigation__logo.focus-visible:focus {
 .footer-navigation__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[4];
-  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[4];
+  grid-template-rows: repeat(4, auto);
   grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .footer-navigation__list li {
@@ -2021,13 +2031,14 @@ a .navigation__logo.focus-visible:focus {
 
 .about__year {
   position: absolute;
-  top: 58px;
-  left: -63px;
+  top: 50px;
+  left: -30px;
   margin: 0;
   padding: 0;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+  width: 320px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -2406,9 +2417,11 @@ a .navigation__logo.focus-visible:focus {
 
   .about__year {
     background: url("../img/background-year@2x.webp"), #00b2ff;
+    width: 320px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    border: none;
   }
 
   .services__item--first {
@@ -2502,6 +2515,9 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .navigation__wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -2649,6 +2665,7 @@ a .navigation__logo.focus-visible:focus {
     max-height: -moz-fit-content;
     max-height: fit-content;
     max-width: 230px;
+    row-gap: 0;
   }
 
   .footer-navigation__list li {
@@ -2672,7 +2689,8 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .about__year {
-    left: -30px;
+    left: -22px;
+    top: 60px;
   }
 
   .about__wrapper {
@@ -2797,6 +2815,14 @@ a .navigation__logo.focus-visible:focus {
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
     column-gap: 25px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .navigation__logo {
+    width: 35px;
+    height: 35px;
   }
 
   a .navigation__logo {
@@ -2985,7 +3011,7 @@ a .navigation__logo.focus-visible:focus {
 
   .advantages svg {
     padding: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: block;
     width: 32px;
     height: 32px;
