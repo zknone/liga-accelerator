@@ -38,8 +38,8 @@ window.addEventListener("DOMContentLoaded", () => {
     form.init();
 
     document.querySelector(".lock-block").addEventListener("click", () => window.focusLock.lock("[data-modal]"));
-    document.querySelector(["[data-modal]").addEventListener('click', () => window.focusLock.unlock());
-    document.querySelector(["[data-modal]").addEventListener('click', () => window.focusLock.unlock(false));
+    document.querySelector(".lock-block").addEventListener('click', () => window.focusLock.unlock());
+    document.querySelector(".lock-block").addEventListener('click', () => window.focusLock.unlock(false));
     // lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
     // lockFalseBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block', false));
     // unlockBtnElement.addEventListener('click', () => window.focusLock.unlock());
