@@ -10,7 +10,7 @@ import {
   addressButton,
   addressHeader,
   onFooterLinksClick,
-  onFooterAddressClick
+  onFooterAddressClick,
 } from "./modules/open-element";
 
 // ---------------------------------
@@ -36,6 +36,14 @@ window.addEventListener("DOMContentLoaded", () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+    const ringButton = document.querySelector("[data-open-modal]");
+    ringButton.addEventListener("click", () => window.focusLock.lock("[data-modal]"));
+
+    // lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
+    // lockFalseBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block', false));
+    // unlockBtnElement.addEventListener('click', () => window.focusLock.unlock());
+    // unlockFalseBtnElement.addEventListener('click', () => window.focusLock.unlock(false));
   });
 });
 
