@@ -2121,23 +2121,36 @@ a .navigation__logo.focus-visible:focus {
 
 .services__item {
   position: relative;
-  padding: 50px 40px;
   min-height: 650px;
 }
 
-.services__item--first {
+.services__item .services__item-filler {
+  padding: 50px 40px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.services__item .services__item-filler--first {
   background: url("../img/services-bg-1.webp") no-repeat, #214e71;
   background-size: cover;
 }
 
-.services__item--second {
+.services__item .services__item-filler--second {
   background: url("../img/services-bg-2.webp") no-repeat, #214e71;
   background-size: cover;
 }
 
-.services__item--third {
+.services__item .services__item-filler--third {
   background: url("../img/services-bg-3.webp") no-repeat, #214e71;
   background-size: cover;
+}
+
+.services__item .services__item-filler.focus-visible:focus {
+  opacity: 0.8;
+  -webkit-transition: opacity 3ms ease-in;
+  -o-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
 }
 
 .services h3 {
@@ -2154,7 +2167,7 @@ a .navigation__logo.focus-visible:focus {
   color: #F2F5F7;
 }
 
-.services__item-link {
+.services__item-element {
   position: absolute;
   top: calc(100% - 60px);
   left: calc(100% - 60px);
@@ -2177,21 +2190,21 @@ a .navigation__logo.focus-visible:focus {
   text-decoration: none;
 }
 
-.services__item-link.focus-visible:focus {
+.services__item-element.focus-visible:focus {
   color: #F2F5F7;
   outline: 2px solid #F2F5F7;
 }
 
-.services__item-link:active {
+.services__item-element:active {
   color: #F2F5F7;
 }
 
-.services__item-link:disabled {
+.services__item-element:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.services__item-link svg {
+.services__item-element svg {
   display: block;
   width: 15px;
   height: 15px;
@@ -2424,17 +2437,17 @@ a .navigation__logo.focus-visible:focus {
     border: none;
   }
 
-  .services__item--first {
+  .services__item .services__item-filler--first {
     background: url("../img/services-bg-1@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--second {
+  .services__item .services__item-filler--second {
     background: url("../img/services-bg-2@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--third {
+  .services__item .services__item-filler--third {
     background: url("../img/services-bg-3@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
@@ -2447,34 +2460,34 @@ a .navigation__logo.focus-visible:focus {
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 999999px) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 999999px) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 999999px) and (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 999999px) and (min-resolution: 1.5dppx) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 999999px) and (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 999999px) and (min-resolution: 1.5dppx) and (max-width: 1023px) {
-  .services__item--first {
+  .services__item .services__item-filler--first {
     background: url("../img/services-bg-tab-1@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--second {
+  .services__item .services__item-filler--second {
     background: url("../img/services-bg-tab-2@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--third {
+  .services__item .services__item-filler--third {
     background: url("../img/services-bg-tab-3@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 999999px) and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 999999px) and (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 999999px) and (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 999999px) and (min-resolution: 1.5dppx) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 999999px) and (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 999999px) and (min-resolution: 1.5dppx) and (max-width: 767px) {
-  .services__item--first {
+  .services__item .services__item-filler--first {
     background: url("../img/services-bg-mob-1@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--second {
+  .services__item .services__item-filler--second {
     background: url("../img/services-bg-mob-2@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--third {
+  .services__item .services__item-filler--third {
     background: url("../img/services-bg-mob-3@2x.webp") no-repeat, #214e71;
     background-size: cover;
   }
@@ -2722,25 +2735,28 @@ a .navigation__logo.focus-visible:focus {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .services__item {
+  .services__item .services__item-filler {
     padding: 35px 45px;
-    width: 100%;
-    min-height: 250px;
   }
 
-  .services__item--first {
+  .services__item .services__item-filler--first {
     background: url("../img/services-bg-tab-1.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--second {
+  .services__item .services__item-filler--second {
     background: url("../img/services-bg-tab-2.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--third {
+  .services__item .services__item-filler--third {
     background: url("../img/services-bg-tab-3.webp") no-repeat, #214e71;
     background-size: cover;
+  }
+
+  .services__item {
+    width: 100%;
+    min-height: 250px;
   }
 
   .services h3 {
@@ -3066,24 +3082,27 @@ a .navigation__logo.focus-visible:focus {
     display: block;
   }
 
-  .services__item {
-    width: 100%;
+  .services__item .services__item-filler {
     padding: 30px;
   }
 
-  .services__item--first {
+  .services__item .services__item-filler--first {
     background: url("../img/services-bg-mob-1.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--second {
+  .services__item .services__item-filler--second {
     background: url("../img/services-bg-mob-2.webp") no-repeat, #214e71;
     background-size: cover;
   }
 
-  .services__item--third {
+  .services__item .services__item-filler--third {
     background: url("../img/services-bg-mob-3.webp") no-repeat, #214e71;
     background-size: cover;
+  }
+
+  .services__item {
+    width: 100%;
   }
 
   .services h3 {
@@ -3091,7 +3110,7 @@ a .navigation__logo.focus-visible:focus {
     line-height: 30px;
   }
 
-  .services__item-link {
+  .services__item-element {
     width: 30px;
     height: 30px;
     padding: 20px;
@@ -3099,7 +3118,7 @@ a .navigation__logo.focus-visible:focus {
     left: calc(100% - 40px);
   }
 
-  .services__item-link svg {
+  .services__item-element svg {
     width: 7px;
     height: 7px;
   }
@@ -3288,7 +3307,14 @@ a .navigation__logo.focus-visible:focus {
     color: #F2F5F7;
   }
 
-  .services__item-link:hover:not(.focus-visible) {
+  .services__item .services__item-filler:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity 3ms ease-in;
+    -o-transition: opacity 3ms ease-in;
+    transition: opacity 3ms ease-in;
+  }
+
+  .services__item-element:hover:not(.focus-visible) {
     color: #F2F5F7;
     background-position: 0 100%;
   }
