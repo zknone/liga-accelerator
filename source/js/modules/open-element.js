@@ -15,16 +15,25 @@ const moreAboutButton = document.querySelector("[data-about-button]");
 
 const onAboutButtonClick = () => {
   openElement(aboutExtra, event);
+  if (moreAboutButton.dataset.aboutButton == "more") {
+    moreAboutButton.innerHTML = "Свернуть";
+    moreAboutButton.dataset.aboutButton = "less";
+  } else {
+    moreAboutButton.innerHTML = "Подробнее";
+    moreAboutButton.dataset.aboutButton = "more";
+  }
 };
 
 const modalFrame = document.querySelectorAll("[data-modal]");
 const callButton = document.querySelector("[data-open-modal]");
 const closeButton = document.querySelector("[data-close-button]");
+const overlay = document.querySelector("[data-close-modal]");
 
 const onModalButtonClick = () => {
   openElement(modalFrame, event);
-  const wholeBody = document.querySelector("body")
+  const wholeBody = document.querySelector("body");
   wholeBody.classList.toggle("has-open-modal");
+  // document.querySelector("[data-input-name]").focus({ focusVisible: true });
 };
 
 const addressList = document.querySelector("[data-footer-address-list]");
@@ -60,4 +69,5 @@ export {
   modalFrame,
   callButton,
   closeButton,
+  overlay,
 };

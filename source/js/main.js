@@ -13,6 +13,7 @@ import {
   addressButton,
   linksHeader,
   addressHeader,
+  overlay,
 } from "./modules/open-element";
 
 // ---------------------------------
@@ -26,7 +27,17 @@ window.addEventListener("DOMContentLoaded", () => {
   // Modules
   // ---------------------------------
   callButton.addEventListener("click", onModalButtonClick);
+  callButton.addEventListener("click", () => {
+    document.querySelector("[data-input-name]").focus({ focusVisible: true });
+  });
+
   closeButton.addEventListener("click", onModalButtonClick);
+  overlay.addEventListener("click", onModalButtonClick);
+  document.addEventListener("keydown", (evt) => {
+    if (evt.key === "Escape") {
+      onModalButtonClick();
+    }
+  });
   moreAboutButton.addEventListener("click", onAboutButtonClick);
   linksButton.addEventListener("click", onFooterLinksClick);
   linksHeader.addEventListener("click", onFooterLinksClick);

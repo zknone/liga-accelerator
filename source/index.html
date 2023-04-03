@@ -56,8 +56,8 @@
             производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей
           </p>
           <button class="btn btn--intro">
-            <span class="intro__description">Получить бесплатную консультацию</span>
-            <span class="intro__mobile-description">Бесплатная консультация</span>
+              <span class="intro__description"><a href="#form">Получить бесплатную консультацию</a></span>
+              <span class="intro__mobile-description"><a href="#form">Бесплатная консультация</a></span>
           </button>
         </div>
       </section>
@@ -148,7 +148,7 @@
               инновационных технологий помогает экономить деньги и&nbsp;время наших
               клиентов.
             </p>
-            <button class="about__button btn" data-about-button>
+            <button class="about__button btn" data-about-button="more">
               Подробнее
             </button>
           </div>
@@ -200,7 +200,7 @@
           </ul>
         </div>
       </section>
-      <section class="form">
+      <section class="form" id="form">
         <div class="container">
           <h2>
             Остались вопросы? Задайте их&nbsp;нам!
@@ -343,7 +343,7 @@
           </p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
             <label>
-              <input type="text" name="name" placeholder="Имя" aria-label="Имя" required/>
+              <input type="text" name="name" placeholder="Имя" aria-label="Имя" data-input-name required/>
             </label>
             <label>
               <input type="tel" name="phone" placeholder="Телефон" pattern="[7-9]{1}[0-9]{9}" aria-label="Телефон" required/>

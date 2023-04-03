@@ -745,7 +745,7 @@ button,
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  background-color: rgba(4, 24, 39, 0.8);
+  background-color: rgba(3, 16, 27, 0.7);
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
@@ -1660,6 +1660,10 @@ a .navigation__logo.focus-visible:focus {
 
 .intro button {
   margin: 0 0 33px 125px;
+}
+
+.intro a {
+  color: #F2F5F7;
 }
 
 .footer-socials {
