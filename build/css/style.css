@@ -1657,8 +1657,9 @@ a .navigation__logo.focus-visible:focus {
   color: #F2F5F7;
 }
 
-.intro button {
+.intro a {
   margin: 0 0 33px 125px;
+  max-width: 420px;
 }
 
 .intro a {
@@ -2632,7 +2633,7 @@ a .navigation__logo.focus-visible:focus {
     margin: 0 0 55px 0;
   }
 
-  .intro button {
+  .intro a {
     margin: 0 0 33px 40px;
   }
 
@@ -2897,7 +2898,8 @@ a .navigation__logo.focus-visible:focus {
     line-height: 22px;
   }
 
-  .intro button {
+  .intro a {
+    max-width: 280px;
     margin: 0;
   }
 

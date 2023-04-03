@@ -72,14 +72,16 @@
   }
 }
 
-.intro button {
+.intro a {
   margin: 0 0 33px 125px;
+  max-width: 420px;
 
   @include vp-1023() {
     margin: 0 0 33px 40px;
   }
 
   @include vp-767() {
+    max-width: 280px;
     margin: 0;
   }
 }
