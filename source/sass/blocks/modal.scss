@@ -214,10 +214,3 @@
 .modal__form button {
   margin-bottom: 20px;
 }
-
-body.has-open-modal {
-  overflow: hidden;
-  height: 98vh;
-  margin-left: -10px;
-  background-color: $color-default-black;
-}
