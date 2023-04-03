@@ -210,22 +210,22 @@
           </p>
           <div data-form-validate>
             <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
-              <label data-form="name">
-                <input type="text" name="name" placeholder="Имя" aria-label="Имя" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required required/>
+              <label data-form="name" data-validate-type="text">
+                <input type="text" name="name" placeholder="Имя" aria-label="Имя" required/>
               </label>
-              <label data-form="phone">
-                <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-required required/>
+              <label data-form="phone" data-validate-type="phone">
+                <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required/>
               </label>
               <label data-form="question">
                 <textarea placeholder="Ваш вопрос"></textarea>
               </label>
-              <button type="submit" class="btn btn--black btn--form" data-callback="callback">
-                Задать вопрос
-              </button>
               <label class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-form="checkbox">
                 <input type="checkbox" checked required/>Я согласен на обработку персональных данных
-                <span class="custom-toggle__icon"> </span>
+                <span class="custom-toggle__icon"></span>
               </label>
+              <button type="submit" class="btn btn--black btn--form">
+                Задать вопрос
+              </button>
             </form>
           </div>
         </div>
@@ -345,20 +345,20 @@
           </p>
           <div data-form-validate>
             <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
-              <label>
-                <input type="text" name="name" placeholder="Имя" aria-label="Имя" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required required/>
+              <label data-validate-type="text">
+                <input type="text" name="name" placeholder="Имя" aria-label="Имя" data-focus required/>
               </label>
-              <label>
-                <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" data-validate-type="phone" data-message-base="Поле обязательно к заполнению" data-required required/>
+              <label data-validate-type="phone">
+                <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required/>
               </label>
               <label>
                 <textarea placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
               </label>
-              <button type="submit" class="btn btn--black btn--form" data-callback="callback">Задать вопрос</button>
-              <label class="custom-toggle custom-toggle--checkbox">
-                <input type="checkbox" data-validate-type="checkbox" checked required/>Я согласен на обработку персональных данных
+              <label class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox">
+                <input type="checkbox" checked required/>Я согласен на обработку персональных данных
                 <span class="custom-toggle__icon"></span>
               </label>
+              <button type="submit" class="btn btn--black btn--form">Задать вопрос</button>
             </form>
           </div>
         </div>
