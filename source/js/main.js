@@ -37,13 +37,8 @@ window.addEventListener("DOMContentLoaded", () => {
     window.form = form;
     form.init();
 
-    document.querySelector(".lock-block").addEventListener("click", () => window.focusLock.lock("[data-modal]"));
-    document.querySelector(".lock-block").addEventListener('click', () => window.focusLock.unlock());
-    document.querySelector(".lock-block").addEventListener('click', () => window.focusLock.unlock(false));
-    // lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
-    // lockFalseBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block', false));
-    // unlockBtnElement.addEventListener('click', () => window.focusLock.unlock());
-    // unlockFalseBtnElement.addEventListener('click', () => window.focusLock.unlock(false));
+    const lockBtnElement = document.querySelector(".lock");
+    lockBtnElement.addEventListener("click", () => window.focusLock.lock(".lock-block"));
   });
 });
 
