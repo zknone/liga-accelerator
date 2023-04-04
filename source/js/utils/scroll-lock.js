@@ -24,7 +24,7 @@ export class ScrollLock {
     this._scrollTop = document.body.dataset.scroll = document.body.dataset.scroll ? document.body.dataset.scroll : this._getBodyScrollTop();
     if (this._getScrollbarWidth()) {
       document.body.style.paddingRight = `${this._getScrollbarWidth()}px`;
-      document.querySelector(".navigation").style.paddingRight = `${this._getScrollbarWidth()}px`;
+      document.querySelector('.navigation').style.paddingRight = `${this._getScrollbarWidth()}px`;
       this._fixedBlockElements.forEach((block) => {
         block.style.paddingRight = `${this._getScrollbarWidth()}px`;
       });
@@ -41,7 +41,7 @@ export class ScrollLock {
     this._fixedBlockElements.forEach((block) => {
       block.style.paddingRight = null;
     });
-    document.querySelector(".navigation").style.paddingRight = null;
+    document.querySelector('.navigation').style.paddingRight = null;
     document.body.removeAttribute('data-scroll');
     this._scrollTop = null;
   }

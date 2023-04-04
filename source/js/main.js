@@ -1,7 +1,6 @@
-import { iosVhFix } from "./utils/ios-vh-fix";
-import { initModals } from "./modules/modals/init-modals";
-import { Form } from "./modules/form-validate/form";
-import { FocusLock } from "./utils/focus-lock";
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
 import {
   onAboutButtonClick,
   moreAboutButton,
@@ -10,12 +9,12 @@ import {
   addressButton,
   addressHeader,
   onFooterLinksClick,
-  onFooterAddressClick,
-} from "./modules/open-element";
+  onFooterAddressClick
+} from './modules/open-element';
 
 // ---------------------------------
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
@@ -23,22 +22,21 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // Modules
   // ---------------------------------
-  moreAboutButton.addEventListener("click", onAboutButtonClick);
-  linksButton.addEventListener("click", onFooterLinksClick);
-  linksHeader.addEventListener("click", onFooterLinksClick);
-  addressButton.addEventListener("click", onFooterAddressClick);
-  addressHeader.addEventListener("click", onFooterAddressClick);
+  moreAboutButton.addEventListener('click', onAboutButtonClick);
+  linksButton.addEventListener('click', onFooterLinksClick);
+  linksHeader.addEventListener('click', onFooterLinksClick);
+  addressButton.addEventListener('click', onFooterAddressClick);
+  addressHeader.addEventListener('click', onFooterAddressClick);
   // // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener("load", () => {
+  window.addEventListener('load', () => {
     initModals();
-    window.focusLock = new FocusLock();
     const form = new Form();
     window.form = form;
     form.init();
 
-    const lockBtnElement = document.querySelector(".lock");
-    lockBtnElement.addEventListener("click", () => window.focusLock.lock(".lock-block"));
+    const lockBtnElement = document.querySelector('.lock');
+    lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
   });
 });
 
