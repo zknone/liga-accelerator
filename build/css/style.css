@@ -2036,7 +2036,7 @@ a .navigation__logo.focus-visible:focus {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  width: 320px;
+  max-width: 320px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -2427,12 +2427,11 @@ a .navigation__logo.focus-visible:focus {
 
   .about__year {
     background: url("../img/background-year@2x.webp"), #00b2ff;
-    width: 320px;
-    min-height: 115px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
+    max-width: 320px;
   }
 
   .services__item .services__item-filler--first {
