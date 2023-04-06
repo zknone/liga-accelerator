@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   transform: rotate(-90deg);
-  width: 320px;
+  width: 100%;
 
   font-family: $ff-roboto;
   font-style: bold;
@@ -36,8 +36,6 @@
 
   @include retina {
     background: url("../img/background-year@2x.webp"), $color-deep-sky-blue;
-    width: 320px;
-    min-height: 115px;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
