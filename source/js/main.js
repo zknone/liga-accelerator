@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-
+    
     const lockBtnElement = document.querySelector('.lock');
     lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
   });
