@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
+  src: url("../fonts/robotocondensed-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "RobotoCondensed";
   font-display: swap;
-  src: url("../fonts/RobotoCondensed-bold.woff2") format("woff2");
+  src: url("../fonts/robotocondensed-bold.woff2") format("woff2");
 }
 
 *,
@@ -1543,13 +1543,14 @@ a .navigation__logo.focus-visible:focus {
 
 .navigation__button {
   margin-right: 60px;
+  margin-bottom: 15px;
+  max-width: 160px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  margin-bottom: 15px;
 }
 
 .footer {
