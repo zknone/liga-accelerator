@@ -2037,7 +2037,9 @@ a .navigation__logo.focus-visible:focus {
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
-  min-width: 320px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: bold;
   font-weight: 700;
@@ -2432,7 +2434,9 @@ a .navigation__logo.focus-visible:focus {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
-    min-width: 320px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .services__item .services__item-filler--first {
