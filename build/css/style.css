@@ -1569,12 +1569,12 @@ a .navigation__logo.focus-visible:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   max-width: 1280px;
   padding: 0 30px;
   margin: 0 auto;
-  -webkit-column-gap: 165px;
-  -moz-column-gap: 165px;
-  column-gap: 165px;
 }
 
 .footer__logo-wrapper {
@@ -1677,6 +1677,8 @@ a .navigation__logo.focus-visible:focus {
   -ms-flex-align: center;
   align-items: center;
   border: none;
+  min-width: 180px;
+  margin-right: 60px;
 }
 
 .footer-socials__logo {
@@ -2215,7 +2217,7 @@ a .navigation__logo.focus-visible:focus {
 .form {
   position: relative;
   background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat, #00b2ff;
-  background-size: 510px 285px, cover;
+  background-size: calc(210px + 21%) auto, cover;
   background-position: calc(40% - 230px) 45%, center;
   z-index: 1;
   padding: 170px 0 230px 0;
@@ -2224,7 +2226,7 @@ a .navigation__logo.focus-visible:focus {
 .form h2 {
   margin: 0 10px 0 auto;
   padding-bottom: 15px;
-  max-width: 580px;
+  max-width: calc(250px + 27%);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -2237,12 +2239,12 @@ a .navigation__logo.focus-visible:focus {
 .form p {
   padding-bottom: 35px;
   margin: 0 10px 0 auto;
-  max-width: 580px;
+  max-width: calc(250px + 27%);
   color: #f2f5f7;
 }
 
 .form__form {
-  max-width: 580px;
+  max-width: calc(250px + 27%);
   margin: 0 10px 0 auto;
   display: -ms-grid;
   display: grid;
@@ -2452,7 +2454,7 @@ a .navigation__logo.focus-visible:focus {
 
   .form {
     background: url("../img/paper-plane@2x.webp") no-repeat, url("../img/form-background-desktop@2x.webp") no-repeat, #00b2ff;
-    background-size: 510px 285px, cover;
+    background-size: calc(210px + 21%) auto, cover;
     background-position: calc(40% - 230px) 45%, center;
   }
 }
@@ -2635,6 +2637,7 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .footer-socials {
+    margin-right: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
