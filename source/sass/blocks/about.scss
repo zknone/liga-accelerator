@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   transform: rotate(-90deg);
-  width: fit-content;
+  max-width: 340px;
 
   font-family: $ff-roboto;
   font-style: bold;
@@ -39,7 +39,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     border: none;
-    width: fit-content;
+    max-width: 340px;
   }
 
   @include retina-vp-767() {
