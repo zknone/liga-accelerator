@@ -2428,6 +2428,7 @@ a .navigation__logo.focus-visible:focus {
   .about__year {
     background: url("../img/background-year@2x.webp"), #00b2ff;
     width: 320px;
+    min-height: 115px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
