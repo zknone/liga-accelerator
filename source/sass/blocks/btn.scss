@@ -64,6 +64,16 @@
     }
   }
 
+  &--about {
+    color: $color-deep-sky-blue;
+    background-color: $background-alice-blue;
+    border: 1px solid $color-deep-sky-blue;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
   &--form {
     padding: 15px 25px;
     font-size: 18px;

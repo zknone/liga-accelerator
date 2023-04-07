@@ -711,6 +711,16 @@ button,
   display: none;
 }
 
+.btn--about {
+  color: #00b2ff;
+  background-color: #f8fdff;
+  border: 1px solid #00b2ff;
+}
+
+.btn--about.focus-visible:focus {
+  opacity: 0.8;
+}
+
 .btn--form {
   padding: 15px 25px;
   font-size: 18px;
@@ -3273,6 +3283,10 @@ a .navigation__logo.focus-visible:focus {
 }
 
 @media (hover: hover) {
+  .btn--about:hover:not(.focus-visible) {
+    opacity: 0.8;
+  }
+
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
   }
