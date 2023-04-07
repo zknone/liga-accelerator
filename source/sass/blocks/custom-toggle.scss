@@ -51,6 +51,11 @@
     }
   }
 
+  input:focus + .custom-toggle__icon {
+    opacity: 0.8;
+    transition: opacity 3ms ease-in;
+  }
+
   &--checkbox {
     .custom-toggle__icon {
       position: absolute;
@@ -147,3 +152,6 @@
     }
   }
 }
+
+
+

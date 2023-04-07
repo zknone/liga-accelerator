@@ -1119,6 +1119,13 @@ button,
   margin-left: 0;
 }
 
+.custom-toggle input:focus + .custom-toggle__icon {
+  opacity: 0.8;
+  -webkit-transition: opacity 3ms ease-in;
+  -o-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
+}
+
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
   top: 10px;
