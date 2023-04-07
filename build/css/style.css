@@ -2579,7 +2579,7 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .navigation__item {
-    margin: 0 30px 0 0;
+    margin: 0 27px 0 0;
     padding: 10px 5px 20px;
   }
 
@@ -2730,7 +2730,7 @@ a .navigation__logo.focus-visible:focus {
     font-size: 24px;
     line-height: 32px;
     margin-top: -15px;
-    margin-bottom: -10px;
+    margin-bottom: 0;
   }
 
   .about__year {
@@ -2878,7 +2878,7 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .navigation__item {
-    padding: 20px 5px 20px;
+    padding: 5px;
     margin: 0 10px 0 0;
   }
 
@@ -2931,6 +2931,7 @@ a .navigation__logo.focus-visible:focus {
 
   .intro a {
     max-width: 280px;
+    padding: 10px;
     margin: 0;
   }
 
@@ -3054,11 +3055,12 @@ a .navigation__logo.focus-visible:focus {
   .advantages h3 {
     font-size: 20px;
     line-height: 28px;
+    padding-bottom: 15px;
   }
 
   .advantages svg {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: block;
     width: 32px;
     height: 32px;
@@ -3084,6 +3086,7 @@ a .navigation__logo.focus-visible:focus {
   .about h2 {
     font-size: 28px;
     line-height: 40px;
+    padding-bottom: 10px;
   }
 
   .about__button {
