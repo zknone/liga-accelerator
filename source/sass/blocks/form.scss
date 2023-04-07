@@ -3,7 +3,7 @@
   background: url("../img/paper-plane.webp") no-repeat,
     url("../img/form-background-desktop.webp") no-repeat,
     $color-deep-sky-blue;
-  background-size: calc(210px + 21%) auto, cover;
+  background-size: calc(140px + 21%) auto, cover;
   background-position: calc(40% - 230px) 45%, center;
   z-index: 1;
   padding: 170px 0 230px 0;
@@ -25,7 +25,7 @@
     background: url("../img/paper-plane@2x.webp") no-repeat,
       url("../img/form-background-desktop@2x.webp") no-repeat,
       $color-deep-sky-blue;
-    background-size: calc(210px + 21%) auto, cover;
+    background-size: calc(120px + 21%) auto, cover;
     background-position: calc(40% - 230px) 45%, center;
   }
 
