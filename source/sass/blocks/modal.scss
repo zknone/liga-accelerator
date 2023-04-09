@@ -15,7 +15,8 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: opacity $trans-modal, transform $trans-modal,
+  transition: opacity $trans-modal,
+    transform $trans-modal,
     visibility $trans-modal;
   pointer-events: none;
 

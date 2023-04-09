@@ -1859,16 +1859,15 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-navigation__header {
-  font-weight: 400;
   max-width: 200px;
+  grid-column: 1/-1;
+  margin-bottom: 20px;
+  font-weight: 400;
   word-wrap: break-word;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   font-style: normal;
-  grid-column: 1/-1;
-  height: fit-content;
-  margin-bottom: 20px;
 }
 
 .footer-navigation__accordeon-button {
@@ -3024,6 +3023,10 @@ a .navigation__logo.focus-visible:focus {
 
   .footer-navigation__list.is-deactivate {
     display: none;
+  }
+
+  .footer-navigation__additional-list {
+    margin-bottom: 20px;
   }
 
   .footer-navigation__additional-list.is-deactivate {
