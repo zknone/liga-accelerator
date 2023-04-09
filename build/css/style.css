@@ -1783,19 +1783,35 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 10px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .footer-navigation__additional-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 10px;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
 .footer-navigation__header {
-  margin-bottom: 20px;
+  min-height: 35px;
   font-weight: 400;
   font-style: normal;
   grid-column: 1/-1;
@@ -2700,8 +2716,8 @@ a .navigation__logo.focus-visible:focus {
     margin: 0;
   }
 
-  .footer-navigation__list li {
-    margin-bottom: 9px;
+  .footer-navigation__list {
+    margin-bottom: 10px;
   }
 
   .advantages ul {
