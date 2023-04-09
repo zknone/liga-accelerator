@@ -1811,7 +1811,7 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-navigation__header {
-  min-height: 35px;
+  min-height: 15px;
   font-weight: 400;
   font-style: normal;
   grid-column: 1/-1;
@@ -1881,6 +1881,7 @@ a .navigation__logo.focus-visible:focus {
   line-height: 21px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
+  max-width: 350px;
 }
 
 .footer-address__header {
@@ -2720,9 +2721,13 @@ a .navigation__logo.focus-visible:focus {
     margin-bottom: 10px;
   }
 
+  .footer-navigation__header {
+    margin-bottom: 8px;
+  }
+
   .advantages ul {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 70px;
   }
 
   .advantages li {
@@ -2742,7 +2747,7 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .about__wrapper {
-    padding: 0 0 85px 176px;
+    padding: 0 0 80px 176px;
   }
 
   .about__wrapper p {

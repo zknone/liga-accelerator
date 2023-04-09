@@ -35,6 +35,7 @@
   line-height: 21px;
   color: $color-semi-transperent;
   margin-bottom: 10px;
+  max-width: 350px;
 
   @include vp-767() {
     font-size: 14px;
