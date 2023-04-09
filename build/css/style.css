@@ -1615,7 +1615,7 @@ a .navigation__logo.focus-visible:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 70%;
+  width: 69%;
 }
 
 .header {
@@ -1772,6 +1772,10 @@ a .navigation__logo.focus-visible:focus {
   display: grid;
   -ms-grid-columns: 220px auto;
   grid-template-columns: 220px auto;
+  -ms-grid-rows: -webkit-min-content auto;
+  -ms-grid-rows: min-content auto;
+  grid-template-rows: -webkit-min-content auto;
+  grid-template-rows: min-content auto;
   position: relative;
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
@@ -1811,10 +1815,16 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-navigation__header {
-  min-height: 15px;
   font-weight: 400;
+  max-width: 200px;
+  word-wrap: break-word;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   font-style: normal;
   grid-column: 1/-1;
+  height: fit-content;
+  margin-bottom: 20px;
 }
 
 .footer-navigation__accordeon-button {

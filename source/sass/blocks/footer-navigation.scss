@@ -1,6 +1,7 @@
 .footer-navigation {
   display: grid;
   grid-template-columns: 220px auto;
+  grid-template-rows: min-content auto;
   position: relative;
   column-gap: 30px;
   margin-right: 30px;
@@ -55,10 +56,15 @@
 }
 
 .footer-navigation__header {
-  min-height: 15px;
   font-weight: 400;
+  max-width: 200px;
+  word-wrap: break-word;
+  height: fit-content;
   font-style: normal;
   grid-column: 1 / -1;
+  height: fit-content;
+
+  margin-bottom: 20px;
 
   @include vp-1023() {
     margin-bottom: 20px;
