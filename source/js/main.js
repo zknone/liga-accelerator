@@ -11,6 +11,7 @@ import {
   onFooterLinksClick,
   onFooterAddressClick
 } from './modules/open-element';
+import {adjustFooter} from './modules/adjust-footer';
 
 // ---------------------------------
 
@@ -19,7 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  adjustFooter();
   // Modules
   // ---------------------------------
   moreAboutButton.addEventListener('click', onAboutButtonClick);
@@ -34,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-    
+
     const lockBtnElement = document.querySelector('.lock');
     lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
   });

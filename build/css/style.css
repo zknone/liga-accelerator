@@ -1768,43 +1768,37 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px auto;
+  grid-template-columns: 220px auto;
   position: relative;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  margin-right: 30px;
   list-style-type: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   border: none;
-  width: 400px;
   padding: 57px 0;
 }
 
 .footer-navigation__list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (auto)[4];
-  grid-template-rows: repeat(4, auto);
-  grid-auto-flow: column;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
-  row-gap: 10px;
 }
 
-.footer-navigation__list li {
-  max-width: 240px;
+.footer-navigation__additional-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-navigation__header {
   margin-bottom: 20px;
   font-weight: 400;
   font-style: normal;
+  grid-column: 1/-1;
 }
 
 .footer-navigation__accordeon-button {
@@ -1852,6 +1846,7 @@ a .navigation__logo.focus-visible:focus {
   flex-direction: column;
   border: none;
   padding: 57px 0;
+  max-width: 450px;
 }
 
 .footer-address__list {
@@ -2694,10 +2689,6 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .footer-navigation {
-    width: 250px;
-  }
-
-  .footer-navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2705,12 +2696,8 @@ a .navigation__logo.focus-visible:focus {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 15px;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
-    max-width: 230px;
-    row-gap: 0;
+    width: 250px;
+    margin: 0;
   }
 
   .footer-navigation__list li {
@@ -2964,6 +2951,10 @@ a .navigation__logo.focus-visible:focus {
     display: none;
   }
 
+  .footer-navigation__additional-list.is-deactivate {
+    display: none;
+  }
+
   .footer-navigation__header {
     margin-top: 20px;
     margin-bottom: 8px;
@@ -2986,6 +2977,8 @@ a .navigation__logo.focus-visible:focus {
   .footer-address {
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
     padding: 0 25px;
+    max-width: none;
+    width: 100%;
   }
 
   .footer-address__list.is-deactivate {
