@@ -11,7 +11,6 @@ import {
   onFooterLinksClick,
   onFooterAddressClick
 } from './modules/open-element';
-import {adjustFooter} from './modules/adjust-footer';
 
 // ---------------------------------
 
@@ -20,7 +19,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  adjustFooter();
   // Modules
   // ---------------------------------
   moreAboutButton.addEventListener('click', onAboutButtonClick);
