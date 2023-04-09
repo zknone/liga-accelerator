@@ -353,20 +353,20 @@
           </p>
           <div data-form-validate data-callback="base">
             <form action="https://echo.htmlacademy.ru/" method="post" class="modal__form">
-              <label data-validate-type="text" data-limitation="letters">
+              <label data-validate-type="text" data-limitation="letters" data-form="name">
                 <input type="text" name="name" placeholder="Имя" aria-label="Имя" data-focus required>
               </label>
-              <label data-validate-type="phone">
+              <label data-validate-type="phone" data-form="phone">
                 <input type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required>
               </label>
-              <label>
+              <label data-form="question">
                 <textarea placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
               </label>
-              <label class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox">
+              <label class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-form="toggle">
                 <input type="checkbox" checked required>Я согласен на обработку персональных данных
                 <span class="custom-toggle__icon"></span>
               </label>
-              <button type="submit" class="btn btn--black btn--form">Задать вопрос</button>
+              <button type="submit" class="btn btn--black btn--form">Отправить</button>
             </form>
           </div>
         </div>

@@ -15,8 +15,7 @@
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
-  transition: opacity $trans-modal,
-    transform $trans-modal,
+  transition: opacity $trans-modal, transform $trans-modal,
     visibility $trans-modal;
   pointer-events: none;
 
@@ -56,9 +55,10 @@
 
   &__content {
     position: relative;
-
-    width: 600px;
-    padding: 40px;
+    top: -90px;
+    left: -20px;
+    width: 500px;
+    padding: 30px 40px;
 
     background-color: $color-deep-sky-blue;
 
@@ -70,12 +70,17 @@
 
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 15px;
+    right: 12px;
     z-index: 1;
 
     width: 40px;
     height: 40px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
     padding: 0;
 
     background: $color-transparent;
@@ -130,11 +135,14 @@
 }
 
 .modal h2 {
-  margin-bottom: 15px;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .modal p {
   margin-bottom: 40px;
+  max-width: 400px;
   color: $color-basic-white;
 }
 
@@ -146,6 +154,22 @@
 .modal__form label {
   color: $color-basic-white;
   margin-bottom: 20px;
+
+  &[data-form="name"] {
+    order: 1;
+  }
+
+  &[data-form="phone"] {
+    order: 2;
+  }
+
+  &[data-form="question"] {
+    order: 3;
+  }
+
+  &[data-form="toggle"] {
+    order: 5;
+  }
 
   &:last-child {
     margin-bottom: 25px;
@@ -213,5 +237,13 @@
 }
 
 .modal__form button {
-  margin-bottom: 20px;
+  order: 4;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.modal__form .custom-toggle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }

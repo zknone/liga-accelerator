@@ -805,15 +805,17 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
-  padding: 40px;
+  top: -90px;
+  left: -20px;
+  width: 500px;
+  padding: 30px 40px;
   background-color: #00b2ff;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 15px;
+  right: 12px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -821,6 +823,11 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+}
+
+.modal__close-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .modal__close-btn:hover {
@@ -866,11 +873,14 @@ button,
 }
 
 .modal h2 {
-  margin-bottom: 15px;
+  text-transform: none;
+  font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .modal p {
   margin-bottom: 40px;
+  max-width: 400px;
   color: #ffffff;
 }
 
@@ -887,6 +897,30 @@ button,
 .modal__form label {
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+.modal__form label[data-form=name] {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.modal__form label[data-form=phone] {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.modal__form label[data-form=question] {
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.modal__form label[data-form=toggle] {
+  -webkit-box-ordinal-group: 6;
+  -ms-flex-order: 5;
+  order: 5;
 }
 
 .modal__form label:last-child {
@@ -958,7 +992,17 @@ button,
 }
 
 .modal__form button {
-  margin-bottom: 20px;
+  -webkit-box-ordinal-group: 5;
+  -ms-flex-order: 4;
+  order: 4;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.modal__form .custom-toggle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .custom-input,
@@ -1098,7 +1142,7 @@ button,
 }
 
 .custom-toggle:last-of-type {
-  padding: 0 0 0 36px;
+  padding: 10px 0 0 36px;
 }
 
 .custom-toggle input {
