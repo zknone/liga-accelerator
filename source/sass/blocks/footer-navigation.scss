@@ -34,7 +34,7 @@
   @include vp-1023() {
     margin-bottom: 10px;
   }
-  
+
   @include vp-767() {
     &.is-deactivate {
       display: none;
@@ -62,7 +62,7 @@
 .footer-navigation__header {
   max-width: 200px;
   grid-column: 1 / -1;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: 400;
   word-wrap: break-word;
   height: fit-content;

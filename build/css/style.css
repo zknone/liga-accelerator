@@ -1557,7 +1557,7 @@ button,
 }
 
 .navigation__wrapper {
-  width: calc(290px + 45%);
+  width: calc(300px + 45%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1572,7 +1572,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: calc(260px + 30%);
+  width: calc(300px + 30%);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1603,7 +1603,7 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .navigation__item {
-  margin: 0 50px 10px 0;
+  margin: 0 90px 20px 0;
 }
 
 .navigation__button {
@@ -1619,8 +1619,11 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .navigation__item svg {
-  width: 19px;
-  height: 19px;
+  position: relative;
+  top: 4px;
+  width: 21px;
+  height: auto;
+  margin-right: 10px;
 }
 
 .footer {
@@ -1705,7 +1708,7 @@ a .navigation__logo.focus-visible:focus {
 
 .intro {
   position: relative;
-  padding: 310px 0 245px;
+  padding: 310px 0 250px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background.webp") no-repeat center, #214e71;
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background.webp") no-repeat center, #214e71;
@@ -1787,7 +1790,7 @@ a .navigation__logo.focus-visible:focus {
   display: block;
   width: 40px;
   height: 40px;
-  padding: 5px;
+  padding: 7px 0;
 }
 
 .footer-socials__social-link .footer-socials__social-icon {
@@ -1861,7 +1864,7 @@ a .navigation__logo.focus-visible:focus {
 .footer-navigation__header {
   max-width: 200px;
   grid-column: 1/-1;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: 400;
   word-wrap: break-word;
   height: -webkit-fit-content;
@@ -1938,7 +1941,7 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .footer-address__header {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-weight: 400;
   font-style: normal;
 }
@@ -2065,7 +2068,7 @@ a .navigation__logo.focus-visible:focus {
 }
 
 .advantages li {
-  padding: 41px;
+  padding: 40px;
   min-height: 300px;
   border: 1px solid #ebebeb;
   border-left: 4px solid #00b2ff;
@@ -2183,7 +2186,7 @@ a .navigation__logo.focus-visible:focus {
 
 .services {
   background-color: #041827;
-  padding: 70px 0 140px;
+  padding: 67px 0 140px;
 }
 
 .services__container {
@@ -2311,15 +2314,15 @@ a .navigation__logo.focus-visible:focus {
   position: relative;
   background: url("../img/paper-plane.webp") no-repeat, url("../img/form-background-desktop.webp") no-repeat, #00b2ff;
   background-size: calc(140px + 21%) auto, cover;
-  background-position: calc(40% - 230px) 45%, center;
+  background-position: calc(40% - 215px) 45%, center;
   z-index: 1;
-  padding: 170px 0 230px 0;
+  padding: 170px 0 220px 0;
 }
 
 .form h2 {
-  margin: 0 10px 0 auto;
-  padding-bottom: 15px;
-  max-width: calc(250px + 27%);
+  margin: 0 25px 0 auto;
+  padding-bottom: 10px;
+  max-width: calc(240px + 27%);
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -2331,14 +2334,14 @@ a .navigation__logo.focus-visible:focus {
 
 .form p {
   padding-bottom: 35px;
-  margin: 0 10px 0 auto;
+  margin: 0 15px 0 auto;
   max-width: calc(250px + 27%);
   color: #f2f5f7;
 }
 
 .form__form {
   max-width: calc(250px + 27%);
-  margin: 0 10px 0 auto;
+  margin: 0 15px 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 30px 1fr;
@@ -2462,8 +2465,9 @@ a .navigation__logo.focus-visible:focus {
   height: -moz-fit-content;
   height: fit-content;
   max-width: 385px;
-  width: calc(100% - 10px);
-  margin-top: 10px;
+  width: calc(100% - 5px);
+  margin-top: 15px;
+  padding: 12px 15px;
 }
 
 .container {
@@ -2548,7 +2552,7 @@ a .navigation__logo.focus-visible:focus {
   .form {
     background: url("../img/paper-plane@2x.webp") no-repeat, url("../img/form-background-desktop@2x.webp") no-repeat, #00b2ff;
     background-size: calc(120px + 21%) auto, cover;
-    background-position: calc(40% - 230px) 45%, center;
+    background-position: calc(40% - 215px) 45%, center;
   }
 }
 
@@ -2644,8 +2648,8 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .navigation__item {
-    margin: 0 27px 0 0;
-    padding: 10px 5px 20px;
+    margin: 0 15px 0 0;
+    padding: 0 5px 22px;
   }
 
   .navigation__link {
@@ -2713,7 +2717,7 @@ a .navigation__logo.focus-visible:focus {
 
   .intro {
     margin-top: -15px;
-    padding: 92px 0 170px;
+    padding: 92px 0 175px;
   }
 
   .intro h2 {
@@ -2780,7 +2784,7 @@ a .navigation__logo.focus-visible:focus {
 
   .advantages ul {
     padding-top: 80px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
   }
 
   .advantages li {
@@ -2792,6 +2796,7 @@ a .navigation__logo.focus-visible:focus {
     line-height: 32px;
     margin-top: -15px;
     margin-bottom: 0;
+    padding-bottom: 10px;
   }
 
   .about__year {
@@ -2862,7 +2867,7 @@ a .navigation__logo.focus-visible:focus {
     background: #00b2ff;
     padding-left: 0;
     padding-top: 50px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
   }
 
   .form h2 {
@@ -2939,8 +2944,12 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .navigation__item {
-    padding: 5px;
-    margin: 0 10px 0 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigation__item svg {
+    margin-right: 15px;
   }
 
   .footer__container {
@@ -3142,7 +3151,7 @@ a .navigation__logo.focus-visible:focus {
   }
 
   .about__wrapper {
-    padding: 0 0 75px;
+    padding: 0 0 80px;
   }
 
   .about__wrapper p {
@@ -3162,6 +3171,7 @@ a .navigation__logo.focus-visible:focus {
 
   .about__button {
     margin-top: -10px;
+    padding: 10px 15px;
     min-width: 160px;
   }
 
